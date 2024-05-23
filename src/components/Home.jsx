@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 const Home = () => {
     return (
@@ -10,7 +10,7 @@ const Home = () => {
                 <p>Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
             </div>
             <div className="homeBtn">
-                <Link to="/space-tourism-website/destination" className="btn">explore</Link>
+                <NavLink to="/Space-tourism/destination" className="btn">explore</NavLink>
             </div>
         </section>
         </>
