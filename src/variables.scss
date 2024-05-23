@@ -1,0 +1,47 @@
+/*----------------------*/
+/*        Colors        */
+/*----------------------*/
+$dark: #0b0d17;
+$accent: #d0d6f9;
+$light: #fff;
+
+/*----------------------*/
+/*      Typography      */
+/*----------------------*/
+// Font sizes
+$fs-small: 0.875rem;
+$fs-normal: 1rem;
+$fs-big: 1.125rem;
+$fs-bigger: 1.75rem;
+$fs-biggest: 2rem;
+$fs-large: 3.5rem;
+$fs-larger: 6.25rem;
+$fs-largest: 9.375rem;
+// Font Family
+$ff-sans: "Barlow", sans-serif;
+$ff-sans-cond: "Barlow Condensed", sans-serif;
+$ff-serif: "Bellefair", serif;
+// Letter spacing
+$ls-wide: 2.35px;
+$ls-wider: 2.7px;
+$ls-widest: 4.75px;
+
+/*-----------------------*/
+/*   Background images   */
+/*-----------------------*/
+// Home
+$bgHomeImgDesktop: url(../public/assets/home/background-home-desktop.jpg);
+$bgHomeImgTablet: url(../public/assets/home/background-home-tablet.jpg);
+$bgHomeImgMobile: url(../public/assets/home/background-home-mobile.jpg);
+//Destination
+$bgDestinationImgDesktop: url(../public/assets/destination/background-destination-desktop.jpg);
+$bgDestinationImgTablet: url(../public/assets/destination/background-destination-tablet.jpg);
+$bgDestinationImgMobile: url(../public/assets/destination/background-destination-mobile.jpg);
+// Crew
+$bgCrewImgDesktop: url(../public/assets/crew/background-crew-desktop.jpg);
+$bgCrewImgTablet: url(../public/assets/crew/background-crew-tablet.jpg);
+$bgCrewImgMobile: url(../public/assets/crew/background-crew-mobile.jpg);
+//Technology
+$bgTechnologyImgDesktop: url(../public/assets/technology/background-technology-desktop.jpg);
+$bgTechnologyImgTablet: url(../public/assets/technology/background-technology-tablet.jpg);
+$bgTechnologyImgMobile: url(../public/assets/technology/background-technology-mobile.jpg);
