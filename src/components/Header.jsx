@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../public/assets/shared/logo.svg';
 
 const Header = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -15,6 +14,8 @@ const Header = () => {
 
     const toggleMenu = () => setMenuOpen(!isMenuOpen);
 
+    const img = {url: 'assets/shared/logo.svg', alt: 'Space Tourism logo'}
+
     const nav = [
         { id: 1, number: '00', title: 'Home', url: '/Space-tourism/' },
         { id: 2, number: '01', title: 'Destination', url: '/Space-tourism/destination/' },
@@ -24,25 +25,24 @@ const Header = () => {
 
     return (
         <header>
-            <NavLink to={nav[0].url} exact>
-                <img src={logo} alt="Space Tourism logo" className="logo" />
-            </NavLink>
-            {isMobile && (
+                <NavLink to={nav[0].url} exact>
+                <img src={img.url} alt={img.alt} className="logo" />
+                </NavLink>
+                {isMobile && (
                 <button className="nav-toggler" aria-expanded={isMenuOpen} aria-controls="menu" onClick={toggleMenu}>
                     <span>{isMenuOpen ? 'Close Navigation' : 'Open Navigation'}</span>
                 </button>
             )}
-            <nav className={isMenuOpen ? 'open' : ''} data-visible={isMenuOpen}>
-                <ul id="menu">
+            <nav data-visible={isMenuOpen}>
+                <div id="menu">
                     {nav.map(({ id, number, title, url }) => (
-                        <li key={id}>
-                            <NavLink to={url} activeClassName="active" exact>
-                                <span className="number" aria-hidden="true">{number}</span>{title}
-                            </NavLink>
-                        </li>
+                        <NavLink key={id} to={url} activeClassName="active" exact>
+                            <span className="number" aria-hidden="true">{number}</span>{title}
+                        </NavLink>
                     ))}
-                </ul>
+                </div>
             </nav>
+            
         </header>
     );
 };

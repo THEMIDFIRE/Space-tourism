@@ -22,9 +22,6 @@ body {
   background-size: cover;
   color: #fff;
 }
-body * ul {
-  list-style: none;
-}
 body * a {
   color: inherit;
   text-decoration: none;
@@ -51,16 +48,16 @@ header {
 header a img {
   width: clamp(2.5rem, 10vw, 3rem);
 }
-header nav ul {
+header nav #menu {
   display: flex;
   justify-content: space-evenly;
   -moz-column-gap: 3.12rem;
        column-gap: 3.12rem;
 }
-header nav ul a {
+header nav #menu a {
   padding-block: 2.375rem;
 }
-header nav ul a span {
+header nav #menu a span {
   margin-right: 0.6rem;
   font-weight: bold;
 }
@@ -173,16 +170,16 @@ main section.home .homeBtn a:hover::after {
   header nav[data-visible=true] {
     transform: translateX(0);
   }
-  header nav ul {
+  header nav #menu {
     flex-direction: column;
     justify-content: flex-start;
     row-gap: 2rem;
     padding: 7.375rem 0 0 2rem;
   }
-  header nav ul a {
+  header nav #menu a {
     padding: 0;
   }
-  header nav ul a.active {
+  header nav #menu a.active {
     border-bottom: none;
     border-right: 3px solid #fff;
   }
@@ -206,13 +203,13 @@ main section.home .homeBtn a:hover::after {
   header nav {
     padding-inline: 7% 10%;
   }
-  header nav ul a:hover, header nav ul a:focus {
+  header nav #menu a:hover, header nav #menu a:focus {
     border-bottom: 3px solid rgba(255, 255, 255, 0.5);
   }
-  header nav ul a.active {
+  header nav #menu a.active {
     border-bottom: 3px solid #fff;
   }
-  header nav ul a span {
+  header nav #menu a span {
     display: none;
   }
   main .home {
@@ -252,7 +249,7 @@ main section.home .homeBtn a:hover::after {
   header nav {
     order: 2;
   }
-  header nav ul a span {
+  header nav #menu a span {
     display: initial;
   }
   main .home {
