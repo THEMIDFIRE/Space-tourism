@@ -17,19 +17,19 @@ const Header = () => {
     const img = { url: "assets/shared/logo.svg", alt: "Space Tourism logo" };
 
     const nav = [
-        { id: 1, number: "00", title: "Home", url: "/Space-tourism" },
+        { id: 1, number: "00", title: "Home", url: "/Space-tourism/" },
         {
             id: 2,
             number: "01",
             title: "Destination",
-            url: "/Space-tourism/destination",
+            url: "/Space-tourism/destination/",
         },
-        { id: 3, number: "02", title: "Crew", url: "/Space-tourism/crew" },
+        { id: 3, number: "02", title: "Crew", url: "/Space-tourism/crew/" },
         {
             id: 4,
             number: "03",
             title: "Technology",
-            url: "/Space-tourism/technology",
+            url: "/Space-tourism/technology/",
         },
     ];
 

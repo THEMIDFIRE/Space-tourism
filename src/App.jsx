@@ -9,7 +9,7 @@ const App = () => {
       <Header />
       <main>
         <Routes>
-          <Route exact path="/Space-tourism" element={<Home />} />
+          <Route exact path="/Space-tourism/" element={<Home />} />
           {/* <Route path="/Space-tourism/destination" element={<Destination />} /> */}
           {/* <Route path="/Space-tourism/crew" element={<Crew />} /> */}
           {/* <Route path="/Space-tourism/technology" element={<Technology />} /> */}
