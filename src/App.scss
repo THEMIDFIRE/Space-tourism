@@ -54,9 +54,9 @@ header {
             justify-content: space-evenly;
             column-gap: 3.12rem;
             li {
-                padding-block: 2.375rem;
                 a {
-                    padding-block: 2.2rem;
+                    display: block;
+                    padding-block: 2.375rem;
                     span {
                         margin-right: 0.6rem;
                         font-weight: bold;
@@ -80,7 +80,6 @@ main {
                 text-transform: uppercase;
             }
             .homeContent {
-                // margin-top: 4vh;
                 h5 {
                     font-size: clamp(16px, 2.65vw, 28px);
                     font-family: $ff-sans-cond;
@@ -186,11 +185,13 @@ main {
                 justify-content: flex-start;
                 row-gap: 2rem;
                 padding: 7.375rem 0 0 2rem;
-                a {
-                    padding: 0;
-                    &.active {
-                        border-bottom: none;
-                        border-right: 3px solid $light;
+                li {
+                    a {
+                        padding: 0;
+                        &.active {
+                            border-bottom: none;
+                            border-right: 3px solid $light;
+                        }
                     }
                 }
             }

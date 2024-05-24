@@ -57,11 +57,9 @@ header nav ul {
   -moz-column-gap: 3.12rem;
        column-gap: 3.12rem;
 }
-header nav ul li {
-  padding-block: 2.375rem;
-}
 header nav ul li a {
-  padding-block: 2.2rem;
+  display: block;
+  padding-block: 2.375rem;
 }
 header nav ul li a span {
   margin-right: 0.6rem;
@@ -182,10 +180,10 @@ main section.home .homeBtn a:hover::after {
     row-gap: 2rem;
     padding: 7.375rem 0 0 2rem;
   }
-  header nav ul a {
+  header nav ul li a {
     padding: 0;
   }
-  header nav ul a.active {
+  header nav ul li a.active {
     border-bottom: none;
     border-right: 3px solid #fff;
   }
