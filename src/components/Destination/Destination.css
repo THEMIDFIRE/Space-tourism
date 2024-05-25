@@ -7,6 +7,18 @@
 /*-----------------------*/
 /*   Background images   */
 /*-----------------------*/
+.destination h5 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 4.75px;
+}
+.destination h5 span {
+  opacity: 0.25;
+  font-weight: bold;
+  margin-right: 1.75rem;
+}
+
 /* --------------------------- */
 /*=== Mobile Design (320px) ===*/
 /* --------------------------- */

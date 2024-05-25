@@ -1,5 +1,19 @@
 @import "../../variables";
 
+.destination {
+    h5 {
+        font-family: $ff-sans-cond;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: $ls-widest;
+        span {
+            opacity: 0.25;
+            font-weight: bold;
+            margin-right: 1.75rem;
+        }
+    }
+}
+
 /* --------------------------- */
 /*=== Mobile Design (320px) ===*/
 /* --------------------------- */

@@ -1,28 +1,52 @@
-import { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
-import { Routes, Route } from "react-router-dom";
-import "./Destination.scss"
-
+import React, { useState } from 'react';
+import './Destination.scss';
+import data from '../../../public/data.json'; // Import JSON data directly
 
 const Destination = () => {
+    const { destinations } = data;
+    const [selectedDestination, setSelectedDestination] = useState(destinations[0]);
 
-    useEffect(() => {
-        document.body.className = '';
-        document.body.classList.add('destination-bg');
-    }, []);
-    //get data from data.json
-    const [data, setData] = useState([]);
-    useEffect(() => {
-        fetch("./data.json")
-            .then((res) => res.json())
-            .then((data) => setData(data.destinations));
-    }, []);
-    console.log(data)
+    const handleDestinationClick = (destination) => {
+        setSelectedDestination(destination);
+    };
 
     return (
         <section className="destination">
-            <p className="sub-H1"><span className="num">01</span>pick your destination</p>
+            <h5><span>01</span> Pick your destination</h5>
+            <div className="destinationImg">
+                <img src={selectedDestination.images.webp} alt={selectedDestination.name} />
+            </div>
+            <div className="destinationContent">
+                <nav className="destinationNav">
+                    {destinations.map((destination) => (
+                        <button
+                            key={destination.name}
+                            onClick={() => handleDestinationClick(destination)}
+                            className={selectedDestination && selectedDestination.name === destination.name ? 'active' : ''}
+                        >
+                            {destination.name}
+                        </button>
+                    ))}
+                </nav>
+                {selectedDestination && (
+                    <div className="destinationDetails">
+                        <h2 className="destinationName">{selectedDestination.name}</h2>
+                        <p className="destinationDescription">{selectedDestination.description}</p>
+                        <div className="destinationInfo">
+                            <div className="destinationDistance">
+                                <h5>AVG. DISTANCE</h5>
+                                <p>{selectedDestination.distance}</p>
+                            </div>
+                            <div className="destinationTime">
+                                <h5>EST. TRAVEL TIME</h5>
+                                <p>{selectedDestination.travel}</p>
+                            </div>
+                        </div>
+                    </div>
+                )}
+            </div>
         </section>
     );
 }
+
 export default Destination;
