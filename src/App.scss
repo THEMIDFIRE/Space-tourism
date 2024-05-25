@@ -1,7 +1,9 @@
 @import "variables";
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
 
-// Reset
+/* ----------- */
+/*=== Reset ===*/
+/* ----------- */
 *,
 *::before,
 *::after {
@@ -10,6 +12,9 @@
     box-sizing: border-box;
 }
 
+/* ----------------- */
+/*=== Main Design ===*/
+/* ----------------- */
 body {
     background-color: $dark;
     background-repeat: no-repeat;
@@ -69,69 +74,6 @@ header {
 
 main {
     max-height: 83vh;
-    section {
-        &.home {
-            font-family: $ff-serif;
-            font-weight: 400;
-            display: grid;
-            h1,
-            h5,
-            a {
-                text-transform: uppercase;
-            }
-            .homeContent {
-                h5 {
-                    font-size: clamp(16px, 2.65vw, 28px);
-                    font-family: $ff-sans-cond;
-                    font-weight: 400;
-                    letter-spacing: clamp(2.7px, 0.44vw, 4.75px);
-                }
-                h1 {
-                    font-weight: 400;
-                    font-size: clamp(80px, 19.54vw, 150px);
-                    margin-block: clamp(1rem, 4vw, 1.5rem);
-                }
-                p {
-                    font-size: clamp(15px, 2.1vw, 18px);
-                    font-family: $ff-sans;
-                    line-height: clamp(25px, 3.65vw, 32px);
-                    color: $accent;
-                }
-            }
-            .homeBtn {
-                a {
-                    background-color: $light;
-                    border-radius: 50%;
-                    color: $dark;
-                    display: inline-grid;
-                    place-items: center;
-                    aspect-ratio: 1;
-                    width: clamp(9.375rem, 31.52vw, 17.125rem);
-                    font-size: clamp(20px, 5vw, 32px);
-                    letter-spacing: clamp(1.25px, 0.27vw, 2px);
-                    position: relative;
-                    z-index: 2;
-                    &::after {
-                        content: "";
-                        width: 100%;
-                        aspect-ratio: 1;
-                        position: absolute;
-                        background-color: rgba($color: $light, $alpha: 0.5);
-                        border-radius: 50%;
-                        opacity: 0.5;
-                        transform: scale(1);
-                        z-index: -1;
-                        transition: transform 0.3s ease-in-out;
-                    }
-                    &:hover {
-                        &::after {
-                            transform: scale(1.4);
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
 
 @supports (backdrop-filter: blur(15px)) {
@@ -144,8 +86,11 @@ main {
 /*=== Mobile Design (320px) ===*/
 /* --------------------------- */
 @media only screen and (max-width: 47.99em) {
-    body {
+    .home-bg {
         background-image: $bgHomeImgMobile;
+    }
+    .destination-bg {
+        background-image: $bgDestinationImgMobile;
     }
     header {
         margin-top: 1.5rem;
@@ -211,8 +156,11 @@ main {
 /*=== Tablet Design (768px) ===*/
 /* --------------------------- */
 @media only screen and (min-width: 48em) {
-    body {
+    .home-bg {
         background-image: $bgHomeImgTablet;
+    }
+    .destination-bg {
+        background-image: $bgDestinationImgTablet;
     }
     header {
         margin-left: 3.82%;
@@ -255,11 +203,14 @@ main {
     }
 }
 /* ---------------------------- */
-/*=== Laptop Design (1024px) ===*/
+/*=== Desktop Design (1024px) ===*/
 /* ---------------------------- */
 @media only screen and (min-width: 64em) {
-    body {
+    .home-bg {
         background-image: $bgHomeImgDesktop;
+    }
+    .destination-bg {
+        background-image: $bgDestinationImgDesktop;
     }
     header {
         margin-top: 2.5rem;

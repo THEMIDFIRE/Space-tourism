@@ -1,0 +1,64 @@
+/*----------------------*/
+/*        Colors        */
+/*----------------------*/
+/*----------------------*/
+/*      Typography      */
+/*----------------------*/
+/*-----------------------*/
+/*   Background images   */
+/*-----------------------*/
+.home {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  display: grid;
+}
+.home h1,
+.home h5,
+.home a {
+  text-transform: uppercase;
+}
+.home .homeContent h5 {
+  font-size: clamp(16px, 2.65vw, 28px);
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  letter-spacing: clamp(2.7px, 0.44vw, 4.75px);
+}
+.home .homeContent h1 {
+  font-weight: 400;
+  font-size: clamp(80px, 19.54vw, 150px);
+  margin-block: clamp(1rem, 4vw, 1.5rem);
+}
+.home .homeContent p {
+  font-size: clamp(15px, 2.1vw, 18px);
+  font-family: "Barlow", sans-serif;
+  line-height: clamp(25px, 3.65vw, 32px);
+  color: #d0d6f9;
+}
+.home .homeBtn a {
+  background-color: #fff;
+  border-radius: 50%;
+  color: #0b0d17;
+  display: inline-grid;
+  place-items: center;
+  aspect-ratio: 1;
+  width: clamp(9.375rem, 31.52vw, 17.125rem);
+  font-size: clamp(20px, 5vw, 32px);
+  letter-spacing: clamp(1.25px, 0.27vw, 2px);
+  position: relative;
+  z-index: 2;
+}
+.home .homeBtn a::after {
+  content: "";
+  width: 100%;
+  aspect-ratio: 1;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  opacity: 0.5;
+  transform: scale(1);
+  z-index: -1;
+  transition: transform 0.3s ease-in-out;
+}
+.home .homeBtn a:hover::after {
+  transform: scale(1.4);
+}/*# sourceMappingURL=Home.css.map */

@@ -8,6 +8,9 @@
 /*   Background images   */
 /*-----------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
+/* ----------- */
+/*=== Reset ===*/
+/* ----------- */
 *,
 *::before,
 *::after {
@@ -16,6 +19,9 @@
   box-sizing: border-box;
 }
 
+/* ----------------- */
+/*=== Main Design ===*/
+/* ----------------- */
 body {
   background-color: #0b0d17;
   background-repeat: no-repeat;
@@ -69,61 +75,6 @@ header nav ul li a span {
 main {
   max-height: 83vh;
 }
-main section.home {
-  font-family: "Bellefair", serif;
-  font-weight: 400;
-  display: grid;
-}
-main section.home h1,
-main section.home h5,
-main section.home a {
-  text-transform: uppercase;
-}
-main section.home .homeContent h5 {
-  font-size: clamp(16px, 2.65vw, 28px);
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: 400;
-  letter-spacing: clamp(2.7px, 0.44vw, 4.75px);
-}
-main section.home .homeContent h1 {
-  font-weight: 400;
-  font-size: clamp(80px, 19.54vw, 150px);
-  margin-block: clamp(1rem, 4vw, 1.5rem);
-}
-main section.home .homeContent p {
-  font-size: clamp(15px, 2.1vw, 18px);
-  font-family: "Barlow", sans-serif;
-  line-height: clamp(25px, 3.65vw, 32px);
-  color: #d0d6f9;
-}
-main section.home .homeBtn a {
-  background-color: #fff;
-  border-radius: 50%;
-  color: #0b0d17;
-  display: inline-grid;
-  place-items: center;
-  aspect-ratio: 1;
-  width: clamp(9.375rem, 31.52vw, 17.125rem);
-  font-size: clamp(20px, 5vw, 32px);
-  letter-spacing: clamp(1.25px, 0.27vw, 2px);
-  position: relative;
-  z-index: 2;
-}
-main section.home .homeBtn a::after {
-  content: "";
-  width: 100%;
-  aspect-ratio: 1;
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  opacity: 0.5;
-  transform: scale(1);
-  z-index: -1;
-  transition: transform 0.3s ease-in-out;
-}
-main section.home .homeBtn a:hover::after {
-  transform: scale(1.4);
-}
 
 @supports ((-webkit-backdrop-filter: blur(15px)) or (backdrop-filter: blur(15px))) {
   nav {
@@ -136,8 +87,11 @@ main section.home .homeBtn a:hover::after {
 /*=== Mobile Design (320px) ===*/
 /* --------------------------- */
 @media only screen and (max-width: 47.99em) {
-  body {
+  .home-bg {
     background-image: url(../public/assets/home/background-home-mobile.jpg);
+  }
+  .destination-bg {
+    background-image: url(../public/assets/destination/background-destination-mobile.jpg);
   }
   header {
     margin-top: 1.5rem;
@@ -198,8 +152,11 @@ main section.home .homeBtn a:hover::after {
 /*=== Tablet Design (768px) ===*/
 /* --------------------------- */
 @media only screen and (min-width: 48em) {
-  body {
+  .home-bg {
     background-image: url(../public/assets/home/background-home-tablet.jpg);
+  }
+  .destination-bg {
+    background-image: url(../public/assets/destination/background-destination-tablet.jpg);
   }
   header {
     margin-left: 3.82%;
@@ -230,11 +187,14 @@ main section.home .homeBtn a:hover::after {
   }
 }
 /* ---------------------------- */
-/*=== Laptop Design (1024px) ===*/
+/*=== Desktop Design (1024px) ===*/
 /* ---------------------------- */
 @media only screen and (min-width: 64em) {
-  body {
+  .home-bg {
     background-image: url(../public/assets/home/background-home-desktop.jpg);
+  }
+  .destination-bg {
+    background-image: url(../public/assets/destination/background-destination-desktop.jpg);
   }
   header {
     margin-top: 2.5rem;

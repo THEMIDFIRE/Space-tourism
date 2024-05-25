@@ -1,0 +1,33 @@
+/*----------------------*/
+/*        Colors        */
+/*----------------------*/
+/*----------------------*/
+/*      Typography      */
+/*----------------------*/
+/*-----------------------*/
+/*   Background images   */
+/*-----------------------*/
+/* --------------------------- */
+/*=== Mobile Design (320px) ===*/
+/* --------------------------- */
+@media only screen and (max-width: 47.99em) {
+  body {
+    background-image: url(../public/assets/destination/background-destination-mobile.jpg);
+  }
+}
+/* --------------------------- */
+/*=== Tablet Design (768px) ===*/
+/* --------------------------- */
+@media only screen and (min-width: 48em) {
+  body {
+    background-image: url(../public/assets/destination/background-destination-tablet.jpg);
+  }
+}
+/* ---------------------------- */
+/*=== Desktop Design (1024px) ===*/
+/* ---------------------------- */
+@media (min-width: 64em) {
+  body {
+    background-image: url(../public/assets/destination/background-destination-desktop.jpg);
+  }
+}/*# sourceMappingURL=Destination.css.map */
