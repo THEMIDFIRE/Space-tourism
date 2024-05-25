@@ -142,14 +142,6 @@ main {
             }
         }
     }
-    main {
-        .home {
-            text-align: center;
-            .homeContent {
-                padding-inline: clamp(1.5rem, 5vw, 10.3125rem);
-            }
-        }
-    }
 }
 
 /* --------------------------- */
@@ -184,24 +176,8 @@ main {
             }
         }
     }
-    main {
-        .home {
-            text-align: center;
-            padding-inline: clamp(1.5rem, 20.73vw, 10.3125rem);
-        }
-    }
 }
 
-@media only screen and (max-width: 63.99em) {
-    main {
-        .home {
-            margin-top: clamp(3rem, 14vw, 15.6875rem);
-            .homeContent {
-                margin-bottom: clamp(5.0625rem, 14vw, 9.75rem);
-            }
-        }
-    }
-}
 /* ---------------------------- */
 /*=== Desktop Design (1024px) ===*/
 /* ---------------------------- */
@@ -236,14 +212,6 @@ main {
                     }
                 }
             }
-        }
-    }
-    main {
-        .home {
-            text-align: left;
-            grid-template-columns: repeat(2, min-content);
-            justify-content: space-between;
-            align-items: end;
         }
     }
 }

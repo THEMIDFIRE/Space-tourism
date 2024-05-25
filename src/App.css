@@ -141,12 +141,6 @@ main {
     border-bottom: none;
     border-right: 3px solid #fff;
   }
-  main .home {
-    text-align: center;
-  }
-  main .home .homeContent {
-    padding-inline: clamp(1.5rem, 5vw, 10.3125rem);
-  }
 }
 /* --------------------------- */
 /*=== Tablet Design (768px) ===*/
@@ -172,18 +166,6 @@ main {
   }
   header nav ul li a span {
     display: none;
-  }
-  main .home {
-    text-align: center;
-    padding-inline: clamp(1.5rem, 20.73vw, 10.3125rem);
-  }
-}
-@media only screen and (max-width: 63.99em) {
-  main .home {
-    margin-top: clamp(3rem, 14vw, 15.6875rem);
-  }
-  main .home .homeContent {
-    margin-bottom: clamp(5.0625rem, 14vw, 9.75rem);
   }
 }
 /* ---------------------------- */
@@ -215,11 +197,5 @@ main {
   }
   header nav ul li a span {
     display: initial;
-  }
-  main .home {
-    text-align: left;
-    grid-template-columns: repeat(2, min-content);
-    justify-content: space-between;
-    align-items: end;
   }
 }/*# sourceMappingURL=App.css.map */
