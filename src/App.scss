@@ -72,10 +72,6 @@ header {
     }
 }
 
-main {
-    max-height: 83vh;
-}
-
 @supports (backdrop-filter: blur(15px)) {
     .primaryNav {
         background-color: rgba($color: $light, $alpha: 0.04);

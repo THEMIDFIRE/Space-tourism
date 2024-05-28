@@ -72,10 +72,6 @@ header .primaryNav ul li a span {
   font-weight: bold;
 }
 
-main {
-  max-height: 83vh;
-}
-
 @supports ((-webkit-backdrop-filter: blur(15px)) or (backdrop-filter: blur(15px))) {
   .primaryNav {
     background-color: rgba(255, 255, 255, 0.04);

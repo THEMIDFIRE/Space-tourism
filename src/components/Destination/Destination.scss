@@ -1,10 +1,13 @@
 @import "../../variables";
 
 .destination {
+    button,
+    h5 {
+        font-family: $ff-sans-cond;
+        font-weight: 400;
+    }
     .destinationHead {
         h5 {
-            font-family: $ff-sans-cond;
-            font-weight: 400;
             text-transform: uppercase;
             letter-spacing: $ls-widest;
             span {
@@ -19,6 +22,50 @@
         .destinationImg {
             img {
                 width: clamp(10.625rem, 39.07vw, 27.8125rem);
+            }
+        }
+        .destinationContent {
+            button,
+            .destinationName,
+            .destinationInfo {
+                text-transform: uppercase;
+            }
+            .destinationNav {
+                button {
+                    letter-spacing: $ls-wider;
+                    background: transparent;
+                    color: $light;
+                    border: none;
+                    padding-bottom: 0.75rem;
+                    &:not(:last-of-type) {
+                        margin-right: 2.1875rem;
+                    }
+                }
+                .active {
+                    border-bottom: 3px solid $light;
+                }
+            }
+            .destinationDetails {
+                h2,
+                .subTxt {
+                    font-family: $ff-serif;
+                }
+                h2 {
+                    font-size: $fs-larger;
+                    font-weight: 400;
+                }
+                .destinationDescription {
+                    font-family: $ff-sans;
+                    line-height: 2rem;
+                    color: $accent;
+                }
+                .subTitle {
+                    font-size: $fs-small;
+                    letter-spacing: $ls-wide;
+                }
+                .subTxt {
+                    font-size: $fs-bigger;
+                }
             }
         }
     }

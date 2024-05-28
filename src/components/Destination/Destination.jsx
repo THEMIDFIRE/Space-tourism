@@ -1,8 +1,14 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Destination.scss';
 import data from '../../data.json';
 
 const Destination = () => {
+
+    useEffect(() => {
+        document.body.className = '';
+        document.body.classList.add('destination-bg');
+    }, []);
+
     const { destinations } = data;
     const [selectedDestination, setSelectedDestination] = useState(destinations[0]);
 
@@ -35,12 +41,12 @@ const Destination = () => {
                             <p className="destinationDescription">{selectedDestination.description}</p>
                             <div className="destinationInfo">
                                 <div className="destinationDistance">
-                                    <h5>AVG. DISTANCE</h5>
-                                    <p>{selectedDestination.distance}</p>
+                                    <h5 className='subTitle'>avg. distance</h5>
+                                    <p className='subTxt'>{selectedDestination.distance}</p>
                                 </div>
                                 <div className="destinationTime">
-                                    <h5>EST. TRAVEL TIME</h5>
-                                    <p>{selectedDestination.travel}</p>
+                                    <h5 className='subTitle'>est. travel time</h5>
+                                    <p className='subTxt'>{selectedDestination.travel}</p>
                                 </div>
                             </div>
                         </div>

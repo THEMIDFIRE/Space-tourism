@@ -7,9 +7,12 @@
 /*-----------------------*/
 /*   Background images   */
 /*-----------------------*/
-.destination .destinationHead h5 {
+.destination button,
+.destination h5 {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 400;
+}
+.destination .destinationHead h5 {
   text-transform: uppercase;
   letter-spacing: 4.75px;
 }
@@ -23,6 +26,44 @@
 }
 .destination .destinationBody .destinationImg img {
   width: clamp(10.625rem, 39.07vw, 27.8125rem);
+}
+.destination .destinationBody .destinationContent button,
+.destination .destinationBody .destinationContent .destinationName,
+.destination .destinationBody .destinationContent .destinationInfo {
+  text-transform: uppercase;
+}
+.destination .destinationBody .destinationContent .destinationNav button {
+  letter-spacing: 2.7px;
+  background: transparent;
+  color: #fff;
+  border: none;
+  padding-bottom: 0.75rem;
+}
+.destination .destinationBody .destinationContent .destinationNav button:not(:last-of-type) {
+  margin-right: 2.1875rem;
+}
+.destination .destinationBody .destinationContent .destinationNav .active {
+  border-bottom: 3px solid #fff;
+}
+.destination .destinationBody .destinationContent .destinationDetails h2,
+.destination .destinationBody .destinationContent .destinationDetails .subTxt {
+  font-family: "Bellefair", serif;
+}
+.destination .destinationBody .destinationContent .destinationDetails h2 {
+  font-size: 6.25rem;
+  font-weight: 400;
+}
+.destination .destinationBody .destinationContent .destinationDetails .destinationDescription {
+  font-family: "Barlow", sans-serif;
+  line-height: 2rem;
+  color: #d0d6f9;
+}
+.destination .destinationBody .destinationContent .destinationDetails .subTitle {
+  font-size: 0.875rem;
+  letter-spacing: 2.35px;
+}
+.destination .destinationBody .destinationContent .destinationDetails .subTxt {
+  font-size: 1.75rem;
 }
 
 /* --------------------------- */
