@@ -7,16 +7,22 @@
 /*-----------------------*/
 /*   Background images   */
 /*-----------------------*/
-.destination h5 {
+.destination .destinationHead h5 {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 4.75px;
 }
-.destination h5 span {
+.destination .destinationHead h5 span {
   opacity: 0.25;
   font-weight: bold;
   margin-right: 1.75rem;
+}
+.destination .destinationBody {
+  display: grid;
+}
+.destination .destinationBody .destinationImg img {
+  width: clamp(10.625rem, 39.07vw, 27.8125rem);
 }
 
 /* --------------------------- */
@@ -41,5 +47,10 @@
 @media (min-width: 64em) {
   body {
     background-image: url(../public/assets/destination/background-destination-desktop.jpg);
+  }
+  .destinationBody {
+    grid-template-columns: repeat(2, 40%);
+    place-items: center;
+    justify-content: space-around;
   }
 }/*# sourceMappingURL=Destination.css.map */

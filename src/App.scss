@@ -53,7 +53,7 @@ header {
             width: clamp(2.5rem, 10vw, 3rem);
         }
     }
-    nav {
+    .primaryNav {
         ul {
             display: flex;
             justify-content: space-evenly;
@@ -77,7 +77,7 @@ main {
 }
 
 @supports (backdrop-filter: blur(15px)) {
-    nav {
+    .primaryNav {
         background-color: rgba($color: $light, $alpha: 0.04);
         backdrop-filter: blur(1.5rem);
     }
@@ -116,7 +116,7 @@ main {
                 background-image: url(../public/assets/shared/icon-close.svg);
             }
         }
-        nav {
+        .primaryNav {
             position: fixed;
             inset: 0 0 0 30%;
             z-index: 9;
@@ -156,7 +156,7 @@ main {
     }
     header {
         margin-left: 3.82%;
-        nav {
+        .primaryNav {
             padding-inline: 7% 10%;
             ul {
                 li {
@@ -201,7 +201,7 @@ main {
             order: 1;
             z-index: 9;
         }
-        nav {
+        .primaryNav {
             order: 2;
             ul {
                 li {

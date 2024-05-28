@@ -48,7 +48,7 @@ const Header = () => {
                     <span>{isMenuOpen ? "Navigation closed" : "Navigation opened"}</span>
                 </button>
             )}
-            <nav data-visible={isMenuOpen}>
+            <nav className="primaryNav" data-visible={isMenuOpen}>
                 <ul id="menu">
                     {nav.map(({ id, number, title, url }) => (
                         <li key={id}>

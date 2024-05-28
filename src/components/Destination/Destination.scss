@@ -1,15 +1,25 @@
 @import "../../variables";
 
 .destination {
-    h5 {
-        font-family: $ff-sans-cond;
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: $ls-widest;
-        span {
-            opacity: 0.25;
-            font-weight: bold;
-            margin-right: 1.75rem;
+    .destinationHead {
+        h5 {
+            font-family: $ff-sans-cond;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: $ls-widest;
+            span {
+                opacity: 0.25;
+                font-weight: bold;
+                margin-right: 1.75rem;
+            }
+        }
+    }
+    .destinationBody {
+        display: grid;
+        .destinationImg {
+            img {
+                width: clamp(10.625rem, 39.07vw, 27.8125rem);
+            }
         }
     }
 }
@@ -38,5 +48,10 @@
 @media (min-width: 64em) {
     body {
         background-image: $bgDestinationImgDesktop;
+    }
+    .destinationBody {
+        grid-template-columns: repeat(2, 40%);
+        place-items: center;
+        justify-content: space-around;
     }
 }
