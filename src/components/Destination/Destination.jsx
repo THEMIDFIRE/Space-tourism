@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './Destination.scss';
-import data from '../../../public/data.json'; // Import JSON data directly
+import data from '../../data.json';
 
 const Destination = () => {
     const { destinations } = data;
