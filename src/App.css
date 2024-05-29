@@ -17,6 +17,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-weight: 400;
 }
 
 /* ----------------- */
@@ -39,7 +40,6 @@ body #root {
   min-height: 100svh;
   display: grid;
   grid-template-rows: min-content 1fr;
-  align-items: center;
 }
 
 /* -------------------- */
@@ -85,9 +85,6 @@ header .primaryNav ul li a span {
 @media only screen and (max-width: 47.99em) {
   .home-bg {
     background-image: url(../public/assets/home/background-home-mobile.jpg);
-  }
-  .destination-bg {
-    background-image: url(../public/assets/destination/background-destination-mobile.jpg);
   }
   header {
     margin-top: 1.5rem;
@@ -145,9 +142,6 @@ header .primaryNav ul li a span {
   .home-bg {
     background-image: url(../public/assets/home/background-home-tablet.jpg);
   }
-  .destination-bg {
-    background-image: url(../public/assets/destination/background-destination-tablet.jpg);
-  }
   header {
     margin-left: 3.82%;
   }
@@ -170,9 +164,6 @@ header .primaryNav ul li a span {
 @media only screen and (min-width: 64em) {
   .home-bg {
     background-image: url(../public/assets/home/background-home-desktop.jpg);
-  }
-  .destination-bg {
-    background-image: url(../public/assets/destination/background-destination-desktop.jpg);
   }
   header {
     margin-top: 2.5rem;

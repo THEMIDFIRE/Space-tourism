@@ -7,6 +7,10 @@
 /*-----------------------*/
 /*   Background images   */
 /*-----------------------*/
+.home-bg #root {
+  align-items: center;
+}
+
 .home {
   font-family: "Bellefair", serif;
   font-weight: 400;

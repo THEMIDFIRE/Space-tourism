@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-weight: 400;
 }
 
 /* ----------------- */
@@ -33,7 +34,6 @@ body {
         min-height: 100svh;
         display: grid;
         grid-template-rows: min-content 1fr;
-        align-items: center;
     }
 }
 
@@ -84,9 +84,6 @@ header {
 @media only screen and (max-width: 47.99em) {
     .home-bg {
         background-image: $bgHomeImgMobile;
-    }
-    .destination-bg {
-        background-image: $bgDestinationImgMobile;
     }
     header {
         margin-top: 1.5rem;
@@ -147,9 +144,6 @@ header {
     .home-bg {
         background-image: $bgHomeImgTablet;
     }
-    .destination-bg {
-        background-image: $bgDestinationImgTablet;
-    }
     header {
         margin-left: 3.82%;
         .primaryNav {
@@ -180,9 +174,6 @@ header {
 @media only screen and (min-width: 64em) {
     .home-bg {
         background-image: $bgHomeImgDesktop;
-    }
-    .destination-bg {
-        background-image: $bgDestinationImgDesktop;
     }
     header {
         margin-top: 2.5rem;

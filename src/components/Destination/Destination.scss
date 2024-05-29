@@ -1,13 +1,20 @@
 @import "../../variables";
 
+.destination-bg {
+    main {
+        margin-block: 4.75rem;
+    }
+}
 .destination {
+    max-width: 80%;
+    margin: auto;
     button,
     h5 {
         font-family: $ff-sans-cond;
-        font-weight: 400;
     }
     .destinationHead {
         h5 {
+            font-size: clamp($fs-normal, 2.61vw, $fs-bigger);
             text-transform: uppercase;
             letter-spacing: $ls-widest;
             span {
@@ -18,7 +25,12 @@
         }
     }
     .destinationBody {
+        text-align: center;
         display: grid;
+        column-gap: 9.8125rem;
+        row-gap: clamp(1.625rem, 6.95vw, 3.3125rem);
+
+        margin-top: 4rem;
         .destinationImg {
             img {
                 width: clamp(10.625rem, 39.07vw, 27.8125rem);
@@ -31,18 +43,22 @@
                 text-transform: uppercase;
             }
             .destinationNav {
+                margin-bottom: 2.3125rem;
                 button {
                     letter-spacing: $ls-wider;
                     background: transparent;
                     color: $light;
                     border: none;
-                    padding-bottom: 0.75rem;
+                    padding-bottom: clamp(0.5rem, 2.1vw, 0.75rem);
                     &:not(:last-of-type) {
-                        margin-right: 2.1875rem;
+                        margin-right: clamp(1.625rem, 5vw, 2.1875rem);
                     }
-                }
-                .active {
-                    border-bottom: 3px solid $light;
+                    &:hover {
+                        border-bottom: 3px solid rgba($color: $light, $alpha: 0.5);
+                    }
+                    &.active {
+                        border-bottom: 3px solid $light;
+                    }
                 }
             }
             .destinationDetails {
@@ -51,17 +67,20 @@
                     font-family: $ff-serif;
                 }
                 h2 {
-                    font-size: $fs-larger;
-                    font-weight: 400;
+                    font-size: clamp(3.5rem, 10.5vw, $fs-larger);
                 }
                 .destinationDescription {
                     font-family: $ff-sans;
+                    font-size: clamp(0.9375rem, 2.1vw, $fs-big);
                     line-height: 2rem;
                     color: $accent;
+                    border-bottom: 1px solid #383b4b;
+                    padding-bottom: clamp(2rem, 6.39vw, 3.375rem);
                 }
                 .subTitle {
                     font-size: $fs-small;
                     letter-spacing: $ls-wide;
+                    margin-bottom: 0.75rem;
                 }
                 .subTxt {
                     font-size: $fs-bigger;
@@ -75,8 +94,14 @@
 /*=== Mobile Design (320px) ===*/
 /* --------------------------- */
 @media only screen and (max-width: 47.99em) {
-    body {
+    .destination-bg {
         background-image: $bgDestinationImgMobile;
+    }
+    .destinationInfo {
+        margin-top: 2rem;
+        .destinationDistance {
+            margin-bottom: 2rem;
+        }
     }
 }
 
@@ -84,21 +109,33 @@
 /*=== Tablet Design (768px) ===*/
 /* --------------------------- */
 @media only screen and (min-width: 48em) {
-    body {
+    .destination-bg {
         background-image: $bgDestinationImgTablet;
+    }
+    .destinationInfo {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 1.75rem;
     }
 }
 
 /* ---------------------------- */
 /*=== Desktop Design (1024px) ===*/
 /* ---------------------------- */
-@media (min-width: 64em) {
-    body {
+@media only screen and (min-width: 64em) {
+    .destination-bg {
         background-image: $bgDestinationImgDesktop;
     }
-    .destinationBody {
-        grid-template-columns: repeat(2, 40%);
-        place-items: center;
-        justify-content: space-around;
+    .destination {
+        .destinationBody {
+            text-align: left;
+            grid-template-columns: repeat(2, minmax(38%, 27.8125rem));
+            place-items: center;
+            justify-content: space-around;
+            .destinationInfo {
+                justify-content: start;
+                column-gap: 4.9375rem;
+            }
+        }
     }
 }
