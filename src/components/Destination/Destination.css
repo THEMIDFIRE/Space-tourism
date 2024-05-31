@@ -92,9 +92,6 @@
 /*=== Mobile Design (320px) ===*/
 /* --------------------------- */
 @media only screen and (max-width: 47.99em) {
-  .destination-bg {
-    background-image: url(../public/assets/destination/background-destination-mobile.jpg);
-  }
   .destinationInfo {
     margin-top: 2rem;
   }
@@ -106,9 +103,6 @@
 /*=== Tablet Design (768px) ===*/
 /* --------------------------- */
 @media only screen and (min-width: 48em) {
-  .destination-bg {
-    background-image: url(../public/assets/destination/background-destination-tablet.jpg);
-  }
   .destinationInfo {
     display: flex;
     justify-content: space-evenly;
@@ -119,9 +113,6 @@
 /*=== Desktop Design (1024px) ===*/
 /* ---------------------------- */
 @media only screen and (min-width: 64em) {
-  .destination-bg {
-    background-image: url(../public/assets/destination/background-destination-desktop.jpg);
-  }
   .destination .destinationBody {
     text-align: left;
     grid-template-columns: repeat(2, minmax(38%, 27.8125rem));

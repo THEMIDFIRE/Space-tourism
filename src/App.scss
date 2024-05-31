@@ -85,6 +85,9 @@ header {
     .home-bg {
         background-image: $bgHomeImgMobile;
     }
+    .destination-bg {
+        background-image: $bgDestinationImgMobile;
+    }
     header {
         margin-top: 1.5rem;
         margin-inline: 1.5rem;
@@ -144,6 +147,9 @@ header {
     .home-bg {
         background-image: $bgHomeImgTablet;
     }
+    .destination-bg {
+        background-image: $bgDestinationImgTablet;
+    }
     header {
         margin-left: 3.82%;
         .primaryNav {
@@ -175,6 +181,10 @@ header {
     .home-bg {
         background-image: $bgHomeImgDesktop;
     }
+    .destination-bg {
+        background-image: $bgDestinationImgDesktop;
+    }
+
     header {
         margin-top: 2.5rem;
         &::after {

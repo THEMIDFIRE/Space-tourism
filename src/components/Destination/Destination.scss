@@ -94,9 +94,6 @@
 /*=== Mobile Design (320px) ===*/
 /* --------------------------- */
 @media only screen and (max-width: 47.99em) {
-    .destination-bg {
-        background-image: $bgDestinationImgMobile;
-    }
     .destinationInfo {
         margin-top: 2rem;
         .destinationDistance {
@@ -109,9 +106,6 @@
 /*=== Tablet Design (768px) ===*/
 /* --------------------------- */
 @media only screen and (min-width: 48em) {
-    .destination-bg {
-        background-image: $bgDestinationImgTablet;
-    }
     .destinationInfo {
         display: flex;
         justify-content: space-evenly;
@@ -123,9 +117,6 @@
 /*=== Desktop Design (1024px) ===*/
 /* ---------------------------- */
 @media only screen and (min-width: 64em) {
-    .destination-bg {
-        background-image: $bgDestinationImgDesktop;
-    }
     .destination {
         .destinationBody {
             text-align: left;
