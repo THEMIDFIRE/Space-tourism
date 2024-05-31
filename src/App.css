@@ -72,6 +72,17 @@ header .primaryNav ul li a span {
   font-weight: bold;
 }
 
+section h5,
+section button {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+section h1,
+section a {
+  text-transform: uppercase;
+}
+
 @supports ((-webkit-backdrop-filter: blur(15px)) or (backdrop-filter: blur(15px))) {
   .primaryNav {
     background-color: rgba(255, 255, 255, 0.04);
@@ -88,6 +99,9 @@ header .primaryNav ul li a span {
   }
   .destination-bg {
     background-image: url(../public/assets/destination/background-destination-mobile.jpg);
+  }
+  .crew-bg {
+    background-image: url(../public/assets/crew/background-crew-mobile.jpg);
   }
   header {
     margin-top: 1.5rem;
@@ -148,6 +162,9 @@ header .primaryNav ul li a span {
   .destination-bg {
     background-image: url(../public/assets/destination/background-destination-tablet.jpg);
   }
+  .crew-bg {
+    background-image: url(../public/assets/crew/background-crew-tablet.jpg);
+  }
   header {
     margin-left: 3.82%;
   }
@@ -173,6 +190,9 @@ header .primaryNav ul li a span {
   }
   .destination-bg {
     background-image: url(../public/assets/destination/background-destination-desktop.jpg);
+  }
+  .crew-bg {
+    background-image: url(../public/assets/crew/background-crew-desktop.jpg);
   }
   header {
     margin-top: 2.5rem;

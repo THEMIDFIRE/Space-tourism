@@ -15,21 +15,16 @@
   max-width: 80%;
   margin: auto;
 }
-.destination button,
-.destination h5 {
-  font-family: "Barlow Condensed", sans-serif;
-}
-.destination .destinationHead h5 {
+.destination .head h5 {
   font-size: clamp(1rem, 2.61vw, 1.75rem);
-  text-transform: uppercase;
   letter-spacing: 4.75px;
 }
-.destination .destinationHead h5 span {
+.destination .head h5 span {
   opacity: 0.25;
   font-weight: bold;
   margin-right: 1.75rem;
 }
-.destination .destinationBody {
+.destination .body {
   text-align: center;
   display: grid;
   -moz-column-gap: 9.8125rem;
@@ -37,41 +32,41 @@
   row-gap: clamp(1.625rem, 6.95vw, 3.3125rem);
   margin-top: 4rem;
 }
-.destination .destinationBody .destinationImg img {
+.destination .body .destinationImg img {
   width: clamp(10.625rem, 39.07vw, 27.8125rem);
 }
-.destination .destinationBody .destinationContent button,
-.destination .destinationBody .destinationContent .destinationName,
-.destination .destinationBody .destinationContent .destinationInfo {
+.destination .body .destinationContent button,
+.destination .body .destinationContent .destinationName,
+.destination .body .destinationContent .destinationInfo {
   text-transform: uppercase;
 }
-.destination .destinationBody .destinationContent .destinationNav {
+.destination .body .destinationContent .destinationNav {
   margin-bottom: 2.3125rem;
 }
-.destination .destinationBody .destinationContent .destinationNav button {
+.destination .body .destinationContent .destinationNav button {
   letter-spacing: 2.7px;
   background: transparent;
   color: #fff;
   border: none;
   padding-bottom: clamp(0.5rem, 2.1vw, 0.75rem);
 }
-.destination .destinationBody .destinationContent .destinationNav button:not(:last-of-type) {
+.destination .body .destinationContent .destinationNav button:not(:last-of-type) {
   margin-right: clamp(1.625rem, 5vw, 2.1875rem);
 }
-.destination .destinationBody .destinationContent .destinationNav button:hover {
+.destination .body .destinationContent .destinationNav button:hover {
   border-bottom: 3px solid rgba(255, 255, 255, 0.5);
 }
-.destination .destinationBody .destinationContent .destinationNav button.active {
+.destination .body .destinationContent .destinationNav button.active {
   border-bottom: 3px solid #fff;
 }
-.destination .destinationBody .destinationContent .destinationDetails h2,
-.destination .destinationBody .destinationContent .destinationDetails .subTxt {
+.destination .body .destinationContent .destinationDetails h2,
+.destination .body .destinationContent .destinationDetails .subTxt {
   font-family: "Bellefair", serif;
 }
-.destination .destinationBody .destinationContent .destinationDetails h2 {
+.destination .body .destinationContent .destinationDetails h2 {
   font-size: clamp(3.5rem, 10.5vw, 6.25rem);
 }
-.destination .destinationBody .destinationContent .destinationDetails .destinationDescription {
+.destination .body .destinationContent .destinationDetails .destinationDescription {
   font-family: "Barlow", sans-serif;
   font-size: clamp(0.9375rem, 2.1vw, 1.125rem);
   line-height: 2rem;
@@ -79,12 +74,12 @@
   border-bottom: 1px solid #383b4b;
   padding-bottom: clamp(2rem, 6.39vw, 3.375rem);
 }
-.destination .destinationBody .destinationContent .destinationDetails .subTitle {
+.destination .body .destinationContent .destinationDetails .subTitle {
   font-size: 0.875rem;
   letter-spacing: 2.35px;
   margin-bottom: 0.75rem;
 }
-.destination .destinationBody .destinationContent .destinationDetails .subTxt {
+.destination .body .destinationContent .destinationDetails .subTxt {
   font-size: 1.75rem;
 }
 
@@ -113,13 +108,13 @@
 /*=== Desktop Design (1024px) ===*/
 /* ---------------------------- */
 @media only screen and (min-width: 64em) {
-  .destination .destinationBody {
+  .destination .body {
     text-align: left;
     grid-template-columns: repeat(2, minmax(38%, 27.8125rem));
     place-items: center;
     justify-content: space-around;
   }
-  .destination .destinationBody .destinationInfo {
+  .destination .body .destinationInfo {
     justify-content: start;
     -moz-column-gap: 4.9375rem;
          column-gap: 4.9375rem;

@@ -18,8 +18,8 @@ const Destination = () => {
 
     return (
         <section className="destination">
-            <div className='destinationHead'><h5><span>01</span> Pick your destination</h5></div>
-            <div className='destinationBody'>
+            <div className='head'><h5><span>01</span> Pick your destination</h5></div>
+            <div className='body'>
                 <div className="destinationImg">
                     <img src={selectedDestination.images.webp} alt={selectedDestination.name} />
                 </div>

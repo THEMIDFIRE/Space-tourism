@@ -8,17 +8,10 @@
 .home {
     font-family: $ff-serif;
     font-weight: 400;
-    display: grid;
-    h1,
-    h5,
-    a {
-        text-transform: uppercase;
-    }
+
     .homeContent {
         h5 {
             font-size: clamp(16px, 2.65vw, 28px);
-            font-family: $ff-sans-cond;
-            font-weight: 400;
             letter-spacing: clamp(2.7px, 0.44vw, 4.75px);
         }
         h1 {
@@ -111,6 +104,7 @@
     main {
         .home {
             text-align: left;
+            display: grid;
             grid-template-columns: repeat(2, min-content);
             justify-content: space-between;
             align-items: end;

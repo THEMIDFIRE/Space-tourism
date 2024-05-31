@@ -72,6 +72,19 @@ header {
     }
 }
 
+section {
+    h5,
+    button {
+        font-family: $ff-sans-cond;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    h1,
+    a {
+        text-transform: uppercase;
+    }
+}
+
 @supports (backdrop-filter: blur(15px)) {
     .primaryNav {
         background-color: rgba($color: $light, $alpha: 0.04);
@@ -87,6 +100,9 @@ header {
     }
     .destination-bg {
         background-image: $bgDestinationImgMobile;
+    }
+    .crew-bg {
+        background-image: $bgCrewImgMobile;
     }
     header {
         margin-top: 1.5rem;
@@ -150,6 +166,9 @@ header {
     .destination-bg {
         background-image: $bgDestinationImgTablet;
     }
+    .crew-bg {
+        background-image: $bgCrewImgTablet;
+    }
     header {
         margin-left: 3.82%;
         .primaryNav {
@@ -184,7 +203,9 @@ header {
     .destination-bg {
         background-image: $bgDestinationImgDesktop;
     }
-
+    .crew-bg {
+        background-image: $bgCrewImgDesktop;
+    }
     header {
         margin-top: 2.5rem;
         &::after {

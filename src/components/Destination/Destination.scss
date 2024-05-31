@@ -8,14 +8,9 @@
 .destination {
     max-width: 80%;
     margin: auto;
-    button,
-    h5 {
-        font-family: $ff-sans-cond;
-    }
-    .destinationHead {
+    .head {
         h5 {
             font-size: clamp($fs-normal, 2.61vw, $fs-bigger);
-            text-transform: uppercase;
             letter-spacing: $ls-widest;
             span {
                 opacity: 0.25;
@@ -24,7 +19,7 @@
             }
         }
     }
-    .destinationBody {
+    .body {
         text-align: center;
         display: grid;
         column-gap: 9.8125rem;
@@ -118,7 +113,7 @@
 /* ---------------------------- */
 @media only screen and (min-width: 64em) {
     .destination {
-        .destinationBody {
+        .body {
             text-align: left;
             grid-template-columns: repeat(2, minmax(38%, 27.8125rem));
             place-items: center;
