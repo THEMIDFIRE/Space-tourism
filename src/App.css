@@ -38,8 +38,6 @@ body * a {
 }
 body #root {
   min-height: 100svh;
-  display: grid;
-  grid-template-rows: min-content 1fr;
 }
 
 /* -------------------- */
@@ -72,15 +70,38 @@ header .primaryNav ul li a span {
   font-weight: bold;
 }
 
+section:not(.home) {
+  max-width: 80%;
+  margin: auto;
+}
 section h5,
 section button {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
 }
+section h5 {
+  font-size: clamp(1rem, 2.61vw, 1.75rem);
+}
 section h1,
 section a {
   text-transform: uppercase;
+}
+section .head h5 {
+  letter-spacing: 4.75px;
+}
+section .head h5 span {
+  opacity: 0.25;
+  font-weight: bold;
+}
+section .body {
+  display: grid;
+}
+section .body .content .description {
+  font-family: "Barlow", sans-serif;
+  font-size: clamp(0.9375rem, 2.1vw, 1.125rem);
+  line-height: 2rem;
+  color: #d0d6f9;
 }
 
 @supports ((-webkit-backdrop-filter: blur(15px)) or (backdrop-filter: blur(15px))) {
@@ -213,5 +234,11 @@ section a {
   }
   header .primaryNav ul li a span {
     display: initial;
+  }
+  section .body {
+    text-align: left;
+    grid-template-columns: repeat(2, minmax(38%, 27.8125rem));
+    place-items: center;
+    justify-content: space-around;
   }
 }/*# sourceMappingURL=App.css.map */

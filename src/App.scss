@@ -32,8 +32,6 @@ body {
     }
     #root {
         min-height: 100svh;
-        display: grid;
-        grid-template-rows: min-content 1fr;
     }
 }
 
@@ -73,15 +71,42 @@ header {
 }
 
 section {
+    &:not(.home) {
+        max-width: 80%;
+        margin: auto;
+    }
     h5,
     button {
         font-family: $ff-sans-cond;
         font-weight: 400;
         text-transform: uppercase;
     }
+    h5 {
+        font-size: clamp($fs-normal, 2.61vw, $fs-bigger);
+    }
     h1,
     a {
         text-transform: uppercase;
+    }
+    .head {
+        h5 {
+            letter-spacing: $ls-widest;
+            span {
+                opacity: 0.25;
+                font-weight: bold;
+            }
+        }
+    }
+    .body {
+        display: grid;
+        .content {
+            .description {
+                font-family: $ff-sans;
+                font-size: clamp(0.9375rem, 2.1vw, $fs-big);
+                line-height: 2rem;
+                color: $accent;
+            }
+        }
     }
 }
 
@@ -230,6 +255,15 @@ section {
                     }
                 }
             }
+        }
+    }
+
+    section {
+        .body {
+            text-align: left;
+            grid-template-columns: repeat(2, minmax(38%, 27.8125rem));
+            place-items: center;
+            justify-content: space-around;
         }
     }
 }

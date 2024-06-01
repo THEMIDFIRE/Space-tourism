@@ -6,4 +6,34 @@
 /*----------------------*/
 /*-----------------------*/
 /*   Background images   */
-/*-----------------------*//*# sourceMappingURL=Crew.css.map */
+/*-----------------------*/
+.crew .body .content h3,
+.crew .body .content h4 {
+  text-transform: uppercase;
+  font-family: "Bellefair", serif;
+}
+.crew .body .content .crewRole {
+  font-size: 2rem;
+  opacity: 0.5;
+}
+.crew .body .content .crewName {
+  font-size: 3.5rem;
+}
+.crew .body .content nav button {
+  width: 0.9375rem;
+  aspect-ratio: 1;
+  opacity: 17.44%;
+  border-radius: 50%;
+}
+.crew .body .content nav button:not(:last-of-type) {
+  margin-right: 1.5rem;
+}
+.crew .body .content nav button span {
+  display: none;
+}
+.crew .body .content nav button.active {
+  opacity: 1;
+}
+.crew .body .crewImg img {
+  width: 100%;
+}/*# sourceMappingURL=Crew.css.map */

@@ -11,22 +11,11 @@
   margin-block: 4.75rem;
 }
 
-.destination {
-  max-width: 80%;
-  margin: auto;
-}
-.destination .head h5 {
-  font-size: clamp(1rem, 2.61vw, 1.75rem);
-  letter-spacing: 4.75px;
-}
 .destination .head h5 span {
-  opacity: 0.25;
-  font-weight: bold;
   margin-right: 1.75rem;
 }
 .destination .body {
   text-align: center;
-  display: grid;
   -moz-column-gap: 9.8125rem;
        column-gap: 9.8125rem;
   row-gap: clamp(1.625rem, 6.95vw, 3.3125rem);
@@ -35,51 +24,47 @@
 .destination .body .destinationImg img {
   width: clamp(10.625rem, 39.07vw, 27.8125rem);
 }
-.destination .body .destinationContent button,
-.destination .body .destinationContent .destinationName,
-.destination .body .destinationContent .destinationInfo {
+.destination .body .content button,
+.destination .body .content .destinationName,
+.destination .body .content .destinationInfo {
   text-transform: uppercase;
 }
-.destination .body .destinationContent .destinationNav {
+.destination .body .content .destinationNav {
   margin-bottom: 2.3125rem;
 }
-.destination .body .destinationContent .destinationNav button {
+.destination .body .content .destinationNav button {
   letter-spacing: 2.7px;
   background: transparent;
   color: #fff;
   border: none;
   padding-bottom: clamp(0.5rem, 2.1vw, 0.75rem);
 }
-.destination .body .destinationContent .destinationNav button:not(:last-of-type) {
+.destination .body .content .destinationNav button:not(:last-of-type) {
   margin-right: clamp(1.625rem, 5vw, 2.1875rem);
 }
-.destination .body .destinationContent .destinationNav button:hover {
+.destination .body .content .destinationNav button:hover {
   border-bottom: 3px solid rgba(255, 255, 255, 0.5);
 }
-.destination .body .destinationContent .destinationNav button.active {
+.destination .body .content .destinationNav button.active {
   border-bottom: 3px solid #fff;
 }
-.destination .body .destinationContent .destinationDetails h2,
-.destination .body .destinationContent .destinationDetails .subTxt {
+.destination .body .content .destinationDetails h2,
+.destination .body .content .destinationDetails .subTxt {
   font-family: "Bellefair", serif;
 }
-.destination .body .destinationContent .destinationDetails h2 {
+.destination .body .content .destinationDetails h2 {
   font-size: clamp(3.5rem, 10.5vw, 6.25rem);
 }
-.destination .body .destinationContent .destinationDetails .destinationDescription {
-  font-family: "Barlow", sans-serif;
-  font-size: clamp(0.9375rem, 2.1vw, 1.125rem);
-  line-height: 2rem;
-  color: #d0d6f9;
+.destination .body .content .destinationDetails .description {
   border-bottom: 1px solid #383b4b;
   padding-bottom: clamp(2rem, 6.39vw, 3.375rem);
 }
-.destination .body .destinationContent .destinationDetails .subTitle {
+.destination .body .content .destinationDetails .subTitle {
   font-size: 0.875rem;
   letter-spacing: 2.35px;
   margin-bottom: 0.75rem;
 }
-.destination .body .destinationContent .destinationDetails .subTxt {
+.destination .body .content .destinationDetails .subTxt {
   font-size: 1.75rem;
 }
 
@@ -110,9 +95,6 @@
 @media only screen and (min-width: 64em) {
   .destination .body {
     text-align: left;
-    grid-template-columns: repeat(2, minmax(38%, 27.8125rem));
-    place-items: center;
-    justify-content: space-around;
   }
   .destination .body .destinationInfo {
     justify-content: start;
