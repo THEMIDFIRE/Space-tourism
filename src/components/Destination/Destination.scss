@@ -6,13 +6,6 @@
     }
 }
 .destination {
-    .head {
-        h5 {
-            span {
-                margin-right: 1.75rem;
-            }
-        }
-    }
     .body {
         text-align: center;
         column-gap: 9.8125rem;
@@ -103,6 +96,10 @@
     .destination {
         .body {
             text-align: left;
+            grid-template-columns: repeat(2, minmax(38%, 27.8125rem));
+            place-items: center;
+            justify-content: space-around;
+
             .destinationInfo {
                 justify-content: start;
                 column-gap: 4.9375rem;

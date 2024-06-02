@@ -88,13 +88,12 @@ section {
     a {
         text-transform: uppercase;
     }
-    .head {
-        h5 {
-            letter-spacing: $ls-widest;
-            span {
-                opacity: 0.25;
-                font-weight: bold;
-            }
+    h5 {
+        letter-spacing: $ls-widest;
+        span {
+            opacity: 0.25;
+            font-weight: bold;
+            margin-right: 1.75rem;
         }
     }
     .body {
@@ -261,9 +260,6 @@ section {
     section {
         .body {
             text-align: left;
-            grid-template-columns: repeat(2, minmax(38%, 27.8125rem));
-            place-items: center;
-            justify-content: space-around;
         }
     }
 }

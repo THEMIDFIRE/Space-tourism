@@ -11,9 +11,6 @@
   margin-block: 4.75rem;
 }
 
-.destination .head h5 span {
-  margin-right: 1.75rem;
-}
 .destination .body {
   text-align: center;
   -moz-column-gap: 9.8125rem;
@@ -95,6 +92,9 @@
 @media only screen and (min-width: 64em) {
   .destination .body {
     text-align: left;
+    grid-template-columns: repeat(2, minmax(38%, 27.8125rem));
+    place-items: center;
+    justify-content: space-around;
   }
   .destination .body .destinationInfo {
     justify-content: start;

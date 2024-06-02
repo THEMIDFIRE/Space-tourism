@@ -87,12 +87,13 @@ section h1,
 section a {
   text-transform: uppercase;
 }
-section .head h5 {
+section h5 {
   letter-spacing: 4.75px;
 }
-section .head h5 span {
+section h5 span {
   opacity: 0.25;
   font-weight: bold;
+  margin-right: 1.75rem;
 }
 section .body {
   display: grid;
@@ -237,8 +238,5 @@ section .body .content .description {
   }
   section .body {
     text-align: left;
-    grid-template-columns: repeat(2, minmax(38%, 27.8125rem));
-    place-items: center;
-    justify-content: space-around;
   }
 }/*# sourceMappingURL=App.css.map */
