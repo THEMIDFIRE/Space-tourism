@@ -34,9 +34,6 @@
 .crew .body .content nav button.active {
   opacity: 1;
 }
-.crew .body .crewImg img {
-  width: 100%;
-}
 
 /* ---------------------------- */
 /*=== Desktop Design (1024px) ===*/
@@ -44,6 +41,5 @@
 @media only screen and (min-width: 64em) {
   section .body {
     grid-template-columns: repeat(2, minmax(min-content, 1fr));
-    align-items: center;
   }
 }/*# sourceMappingURL=Crew.css.map */

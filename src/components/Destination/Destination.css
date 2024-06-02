@@ -93,8 +93,7 @@
   .destination .body {
     text-align: left;
     grid-template-columns: repeat(2, minmax(38%, 27.8125rem));
-    place-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .destination .body .destinationInfo {
     justify-content: start;

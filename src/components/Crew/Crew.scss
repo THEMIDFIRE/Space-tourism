@@ -33,11 +33,6 @@
                 }
             }
         }
-        .crewImg {
-            img {
-                width: 100%;
-            }
-        }
     }
 }
 
@@ -48,7 +43,6 @@
     section {
         .body {
             grid-template-columns: repeat(2, minmax(min-content, 1fr));
-            align-items: center;
         }
     }
 }

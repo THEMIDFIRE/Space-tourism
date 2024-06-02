@@ -43,9 +43,7 @@ const Crew = () => {
                                 ))}
                             </nav>
                         </div>
-                        <div className="crewImg">
-                            <img src={selectedCrew.images.webp} alt={selectedCrew.name} />
-                        </div>
+                        <img src={selectedCrew.images.webp} alt={selectedCrew.name} />
                     </>
                 )}
             </div>

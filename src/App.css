@@ -238,5 +238,6 @@ section .body .content .description {
   }
   section .body {
     text-align: left;
+    place-items: center;
   }
 }/*# sourceMappingURL=App.css.map */
