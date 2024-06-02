@@ -19,7 +19,8 @@
 body {
     background-color: $dark;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
+    background-position: top center;
     color: $light;
     * {
         ul {
@@ -30,8 +31,10 @@ body {
             text-decoration: none;
         }
     }
-    #root {
-        min-height: 100svh;
+    &.home-bg {
+        #root {
+            min-height: 100svh;
+        }
     }
 }
 
@@ -73,7 +76,7 @@ header {
 section {
     &:not(.home) {
         max-width: 80%;
-        margin: auto;
+        margin-inline: auto;
     }
     h5,
     button {

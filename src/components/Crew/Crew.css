@@ -7,6 +7,9 @@
 /*-----------------------*/
 /*   Background images   */
 /*-----------------------*/
+.crew {
+  margin-block: 3.875rem 0;
+}
 .crew .body .content h3,
 .crew .body .content h4 {
   text-transform: uppercase;
@@ -15,9 +18,14 @@
 .crew .body .content .crewRole {
   font-size: 2rem;
   opacity: 0.5;
+  margin-block: 9.625rem 0.9375rem;
 }
 .crew .body .content .crewName {
   font-size: 3.5rem;
+}
+.crew .body .content .description {
+  margin-block: 1.6875rem 7.5rem;
+  max-width: 43.4ch;
 }
 .crew .body .content nav button {
   width: 0.9375rem;
@@ -33,6 +41,9 @@
 }
 .crew .body .content nav button.active {
   opacity: 1;
+}
+.crew .body img {
+  align-self: self-end;
 }
 
 /* ---------------------------- */

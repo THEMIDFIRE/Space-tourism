@@ -1,6 +1,7 @@
 @import "../../variables";
 
 .crew {
+    margin-block: 3.875rem 0;
     .body {
         .content {
             h3,
@@ -11,9 +12,14 @@
             .crewRole {
                 font-size: $fs-biggest;
                 opacity: 0.5;
+                margin-block: 9.625rem 0.9375rem;
             }
             .crewName {
                 font-size: $fs-large;
+            }
+            .description {
+                margin-block: 1.6875rem 7.5rem;
+                max-width: 43.4ch;
             }
             nav {
                 button {
@@ -32,6 +38,9 @@
                     }
                 }
             }
+        }
+        img {
+            align-self: self-end;
         }
     }
 }
