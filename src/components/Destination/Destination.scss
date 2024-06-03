@@ -7,6 +7,7 @@
 }
 .destination {
     .body {
+        display: grid;
         column-gap: 9.8125rem;
         row-gap: clamp(1.625rem, 6.95vw, 3.3125rem);
         margin-top: 4rem;

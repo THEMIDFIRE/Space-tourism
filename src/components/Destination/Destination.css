@@ -12,6 +12,7 @@
 }
 
 .destination .body {
+  display: grid;
   -moz-column-gap: 9.8125rem;
        column-gap: 9.8125rem;
   row-gap: clamp(1.625rem, 6.95vw, 3.3125rem);

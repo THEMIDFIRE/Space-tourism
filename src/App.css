@@ -24,10 +24,8 @@
 /*=== Main Design ===*/
 /* ----------------- */
 body {
-  background-color: #0b0d17;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: top center;
+  background-attachment: fixed;
   color: #fff;
 }
 body * ul {
