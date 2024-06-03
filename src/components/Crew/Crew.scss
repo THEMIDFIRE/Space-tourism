@@ -1,46 +1,52 @@
 @import "../../variables";
 
-.crew {
-    margin-block: 3.875rem 0;
-    .body {
-        .content {
-            h3,
-            h4 {
-                text-transform: uppercase;
-                font-family: $ff-serif;
-            }
-            .crewRole {
-                font-size: $fs-biggest;
-                opacity: 0.5;
-                margin-block: 9.625rem 0.9375rem;
-            }
-            .crewName {
-                font-size: $fs-large;
-            }
-            .description {
-                margin-block: 1.6875rem 7.5rem;
-                max-width: 43.4ch;
-            }
-            nav {
-                button {
-                    width: 0.9375rem;
-                    aspect-ratio: 1;
-                    opacity: 17.44%;
-                    border-radius: 50%;
-                    &:not(:last-of-type) {
-                        margin-right: 1.5rem;
-                    }
-                    span {
-                        display: none;
-                    }
-                    &.active {
-                        opacity: 1;
+main {
+    margin-top: 3.875rem;
+    .crew {
+        .body {
+            .content {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                h3,
+                h4 {
+                    text-transform: uppercase;
+                    font-family: $ff-serif;
+                }
+                .crewRole {
+                    font-size: $fs-biggest;
+                    opacity: 0.5;
+                    margin-block: 9.625rem 0.9375rem;
+                }
+                .crewName {
+                    font-size: $fs-large;
+                }
+                .description {
+                    margin-block: 1.6875rem 7.5rem;
+                    max-width: 43.4ch;
+                }
+                nav {
+                    padding-bottom: 5.875rem;
+                    button {
+                        width: 0.9375rem;
+                        aspect-ratio: 1;
+                        opacity: 17.44%;
+                        border-radius: 50%;
+                        &:not(:last-of-type) {
+                            margin-right: 1.5rem;
+                        }
+                        span {
+                            display: none;
+                        }
+                        &.active {
+                            opacity: 1;
+                        }
                     }
                 }
             }
-        }
-        img {
-            align-self: self-end;
+            img {
+                align-self: self-end;
+            }
         }
     }
 }
@@ -51,7 +57,7 @@
 @media only screen and (min-width: 64em) {
     section {
         .body {
-            grid-template-columns: repeat(2, minmax(min-content, 1fr));
+            grid-template-columns: repeat(2, minmax(60%, auto));
         }
     }
 }

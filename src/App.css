@@ -72,8 +72,7 @@ header .primaryNav ul li a span {
 }
 
 section:not(.home) {
-  max-width: 80%;
-  margin-inline: auto;
+  margin-inline: 10.3125rem;
 }
 section h5,
 section button {
@@ -239,6 +238,8 @@ section .body .content .description {
   }
   section .body {
     text-align: left;
+  }
+  section .body:not(.crew) .body {
     place-items: center;
   }
 }/*# sourceMappingURL=App.css.map */

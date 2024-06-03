@@ -7,42 +7,50 @@
 /*-----------------------*/
 /*   Background images   */
 /*-----------------------*/
-.crew {
-  margin-block: 3.875rem 0;
+main {
+  margin-top: 3.875rem;
 }
-.crew .body .content h3,
-.crew .body .content h4 {
+main .crew .body .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+main .crew .body .content h3,
+main .crew .body .content h4 {
   text-transform: uppercase;
   font-family: "Bellefair", serif;
 }
-.crew .body .content .crewRole {
+main .crew .body .content .crewRole {
   font-size: 2rem;
   opacity: 0.5;
   margin-block: 9.625rem 0.9375rem;
 }
-.crew .body .content .crewName {
+main .crew .body .content .crewName {
   font-size: 3.5rem;
 }
-.crew .body .content .description {
+main .crew .body .content .description {
   margin-block: 1.6875rem 7.5rem;
   max-width: 43.4ch;
 }
-.crew .body .content nav button {
+main .crew .body .content nav {
+  padding-bottom: 5.875rem;
+}
+main .crew .body .content nav button {
   width: 0.9375rem;
   aspect-ratio: 1;
   opacity: 17.44%;
   border-radius: 50%;
 }
-.crew .body .content nav button:not(:last-of-type) {
+main .crew .body .content nav button:not(:last-of-type) {
   margin-right: 1.5rem;
 }
-.crew .body .content nav button span {
+main .crew .body .content nav button span {
   display: none;
 }
-.crew .body .content nav button.active {
+main .crew .body .content nav button.active {
   opacity: 1;
 }
-.crew .body img {
+main .crew .body img {
   align-self: self-end;
 }
 
@@ -51,6 +59,6 @@
 /* ---------------------------- */
 @media only screen and (min-width: 64em) {
   section .body {
-    grid-template-columns: repeat(2, minmax(min-content, 1fr));
+    grid-template-columns: repeat(2, minmax(60%, auto));
   }
 }/*# sourceMappingURL=Crew.css.map */

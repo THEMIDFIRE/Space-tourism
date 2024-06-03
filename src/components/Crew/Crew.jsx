@@ -28,10 +28,12 @@ const Crew = () => {
                         <div className="content">
                             <h5><span>02</span>Meet your crew</h5>
 
-                            <h4 className="crewRole">{selectedCrew.role}</h4>
-                            <h3 className="crewName">{selectedCrew.name}</h3>
-                            <p className="description">{selectedCrew.bio}</p>
-                            <nav className="crewNav">
+                            <div className="crewInfo">
+                                <h4 className="crewRole">{selectedCrew.role}</h4>
+                                <h3 className="crewName">{selectedCrew.name}</h3>
+                                <p className="description">{selectedCrew.bio}</p>
+
+                            </div>                            <nav className="crewNav">
                                 {crew.map((member, index) => (
                                     <button
                                         key={index}

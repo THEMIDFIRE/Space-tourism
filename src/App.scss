@@ -75,8 +75,7 @@ header {
 
 section {
     &:not(.home) {
-        max-width: 80%;
-        margin-inline: auto;
+        margin-inline: 10.3125rem;
     }
     h5,
     button {
@@ -263,7 +262,11 @@ section {
     section {
         .body {
             text-align: left;
-            place-items: center;
+            &:not(.crew) {
+                .body {
+                    place-items: center;
+                }
+            }
         }
     }
 }
