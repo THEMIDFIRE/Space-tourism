@@ -75,7 +75,13 @@ header {
 
 section {
     &:not(.home) {
-        margin-inline: 10.3125rem;
+        .head {
+            margin-left: 10.375rem;
+        }
+        .body {
+            max-width: 76.95%;
+            margin-inline: auto;
+        }
     }
     h5,
     button {

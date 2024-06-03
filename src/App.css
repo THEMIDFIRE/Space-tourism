@@ -71,8 +71,12 @@ header .primaryNav ul li a span {
   font-weight: bold;
 }
 
-section:not(.home) {
-  margin-inline: 10.3125rem;
+section:not(.home) .head {
+  margin-left: 10.375rem;
+}
+section:not(.home) .body {
+  max-width: 76.95%;
+  margin-inline: auto;
 }
 section h5,
 section button {

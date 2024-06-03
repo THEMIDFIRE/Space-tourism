@@ -22,18 +22,20 @@ const Crew = () => {
 
     return (
         <section className="crew">
+            <div className="head">
+                <h5><span>02</span>Meet your crew</h5>
+            </div>
             <div className="body">
                 {selectedCrew && (
                     <>
                         <div className="content">
-                            <h5><span>02</span>Meet your crew</h5>
-
                             <div className="crewInfo">
                                 <h4 className="crewRole">{selectedCrew.role}</h4>
                                 <h3 className="crewName">{selectedCrew.name}</h3>
                                 <p className="description">{selectedCrew.bio}</p>
 
-                            </div>                            <nav className="crewNav">
+                            </div>
+                            <nav className="crewNav">
                                 {crew.map((member, index) => (
                                     <button
                                         key={index}
