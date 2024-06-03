@@ -23,7 +23,6 @@ main {
                 }
                 .description {
                     margin-block: 1.6875rem 7.5rem;
-                    max-width: 43.4ch;
                 }
                 nav {
                     padding-bottom: 5.875rem;
@@ -45,7 +44,7 @@ main {
                 }
             }
             img {
-                align-self: self-end;
+                max-width: 100%;
             }
         }
     }
@@ -58,6 +57,14 @@ main {
     section {
         .body {
             grid-template-columns: repeat(2, minmax(60%, auto));
+            .content {
+                .description {
+                    max-width: 43.4ch;
+                }
+            }
+            img {
+                align-self: self-end;
+            }
         }
     }
 }

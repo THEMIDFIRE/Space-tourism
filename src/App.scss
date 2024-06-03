@@ -74,6 +74,7 @@ header {
 }
 
 section {
+    text-align: center;
     &:not(.home) {
         .head {
             margin-left: 10.375rem;
@@ -105,7 +106,6 @@ section {
         }
     }
     .body {
-        display: grid;
         .content {
             .description {
                 font-family: $ff-sans;
@@ -266,8 +266,10 @@ section {
     }
 
     section {
+        text-align: left;
         .body {
-            text-align: left;
+            display: grid;
+
             &:not(.crew) {
                 .body {
                     place-items: center;

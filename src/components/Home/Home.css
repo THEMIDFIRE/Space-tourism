@@ -75,7 +75,6 @@
 /* --------------------------- */
 @media only screen and (min-width: 48em) {
   main .home {
-    text-align: center;
     padding-inline: clamp(1.5rem, 20.73vw, 10.3125rem);
   }
 }
@@ -92,7 +91,6 @@
 /* ---------------------------- */
 @media only screen and (min-width: 64em) {
   main .home {
-    text-align: left;
     display: grid;
     grid-template-columns: repeat(2, min-content);
     justify-content: space-between;

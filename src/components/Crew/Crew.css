@@ -30,7 +30,6 @@ main .crew .body .content .crewName {
 }
 main .crew .body .content .description {
   margin-block: 1.6875rem 7.5rem;
-  max-width: 43.4ch;
 }
 main .crew .body .content nav {
   padding-bottom: 5.875rem;
@@ -51,7 +50,7 @@ main .crew .body .content nav button.active {
   opacity: 1;
 }
 main .crew .body img {
-  align-self: self-end;
+  max-width: 100%;
 }
 
 /* ---------------------------- */
@@ -60,5 +59,11 @@ main .crew .body img {
 @media only screen and (min-width: 64em) {
   section .body {
     grid-template-columns: repeat(2, minmax(60%, auto));
+  }
+  section .body .content .description {
+    max-width: 43.4ch;
+  }
+  section .body img {
+    align-self: self-end;
   }
 }/*# sourceMappingURL=Crew.css.map */
