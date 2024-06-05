@@ -74,13 +74,8 @@ header {
 section {
     text-align: center;
     &:not(.home) {
-        .head {
-            margin-left: 10.375rem;
-        }
-        .body {
-            max-width: 76.95%;
-            margin-inline: auto;
-        }
+        max-width: 76.95%;
+        margin-inline: auto;
     }
     h5,
     button {
@@ -104,13 +99,14 @@ section {
         }
     }
     .body {
-        .content {
-            .description {
-                font-family: $ff-sans;
-                font-size: clamp(0.9375rem, 2.1vw, $fs-big);
-                line-height: 2rem;
-                color: $accent;
-            }
+        display: grid;
+    }
+    .content {
+        .description {
+            font-family: $ff-sans;
+            font-size: clamp(0.9375rem, 2.1vw, $fs-big);
+            line-height: clamp(1.5625rem, 3.65vw, 2rem);
+            color: $accent;
         }
     }
 }
@@ -266,8 +262,6 @@ section {
     section {
         text-align: left;
         .body {
-            display: grid;
-
             &:not(.crew) {
                 .body {
                     place-items: center;

@@ -22,35 +22,31 @@ const Crew = () => {
 
     return (
         <section className="crew">
-            <div className="head">
-                <h5><span>02</span>Meet your crew</h5>
-            </div>
-            <div className="body">
-                {selectedCrew && (
-                    <>
-                        <div className="content">
-                            <div className="crewInfo">
-                                <h4 className="crewRole">{selectedCrew.role}</h4>
-                                <h3 className="crewName">{selectedCrew.name}</h3>
-                                <p className="description">{selectedCrew.bio}</p>
+            <h5><span>02</span>Meet your crew</h5>
+            {selectedCrew && (
+                <>
+                    <div className="content">
+                        <nav className="crewNav">
+                            {crew.map((member, index) => (
+                                <button
+                                    key={index}
+                                    onClick={() => handleCrewClick(member)}
+                                    className={selectedCrew && selectedCrew.name === member.name ? 'active' : ''}
+                                >
+                                    <span>{member.name}</span>
+                                </button>
+                            ))}
+                        </nav>
+                        <div className="crewInfo">
+                            <h4 className="crewRole">{selectedCrew.role}</h4>
+                            <h3 className="crewName">{selectedCrew.name}</h3>
+                            <p className="description">{selectedCrew.bio}</p>
 
-                            </div>
-                            <nav className="crewNav">
-                                {crew.map((member, index) => (
-                                    <button
-                                        key={index}
-                                        onClick={() => handleCrewClick(member)}
-                                        className={selectedCrew && selectedCrew.name === member.name ? 'active' : ''}
-                                    >
-                                        <span>{member.name}</span>
-                                    </button>
-                                ))}
-                            </nav>
                         </div>
-                        <img src={selectedCrew.images.webp} alt={selectedCrew.name} />
-                    </>
-                )}
-            </div>
+                    </div>
+                    <div className="crewImg"><img src={selectedCrew.images.webp} alt={selectedCrew.name} /></div>
+                </>
+            )}
         </section>
     );
 };

@@ -72,10 +72,7 @@ header .primaryNav ul li a span {
 section {
   text-align: center;
 }
-section:not(.home) .head {
-  margin-left: 10.375rem;
-}
-section:not(.home) .body {
+section:not(.home) {
   max-width: 76.95%;
   margin-inline: auto;
 }
@@ -100,10 +97,13 @@ section h5 span {
   font-weight: bold;
   margin-right: 1.75rem;
 }
-section .body .content .description {
+section .body {
+  display: grid;
+}
+section .content .description {
   font-family: "Barlow", sans-serif;
   font-size: clamp(0.9375rem, 2.1vw, 1.125rem);
-  line-height: 2rem;
+  line-height: clamp(1.5625rem, 3.65vw, 2rem);
   color: #d0d6f9;
 }
 
@@ -240,9 +240,6 @@ section .body .content .description {
   }
   section {
     text-align: left;
-  }
-  section .body {
-    display: grid;
   }
   section .body:not(.crew) .body {
     place-items: center;
