@@ -48,10 +48,10 @@ main .crew .content nav button span {
 main .crew .content nav button.active {
   opacity: 1;
 }
-main .crew .crewImg {
-  width: clamp(20.4375rem, 59.44vw, 35.5rem);
+main .crewImg {
+  max-height: 43.75rem;
 }
-main .crew .crewImg img {
+main .crewImg img {
   width: 100%;
 }
 
