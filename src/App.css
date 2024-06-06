@@ -26,6 +26,7 @@
 body {
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
   color: #fff;
 }
 body * ul {
@@ -97,14 +98,14 @@ section h5 span {
   font-weight: bold;
   margin-right: 1.75rem;
 }
-section .body {
-  display: grid;
-}
 section .content .description {
   font-family: "Barlow", sans-serif;
   font-size: clamp(0.9375rem, 2.1vw, 1.125rem);
   line-height: clamp(1.5625rem, 3.65vw, 2rem);
   color: #d0d6f9;
+}
+section img {
+  width: 100%;
 }
 
 @supports ((-webkit-backdrop-filter: blur(15px)) or (backdrop-filter: blur(15px))) {
@@ -126,6 +127,9 @@ section .content .description {
   }
   .crew-bg {
     background-image: url(../public/assets/crew/background-crew-mobile.jpg);
+  }
+  .tech-bg {
+    background-image: url(../public/assets/technology/background-technology-mobile.jpg);
   }
   header {
     margin-top: 1.5rem;
@@ -189,6 +193,9 @@ section .content .description {
   .crew-bg {
     background-image: url(../public/assets/crew/background-crew-tablet.jpg);
   }
+  .tech-bg {
+    background-image: url(../public/assets/technology/background-technology-tablet.jpg);
+  }
   header {
     margin-left: 3.82%;
   }
@@ -217,6 +224,9 @@ section .content .description {
   }
   .crew-bg {
     background-image: url(../public/assets/crew/background-crew-desktop.jpg);
+  }
+  .tech-bg {
+    background-image: url(../public/assets/technology/background-technology-desktop.jpg);
   }
   header {
     margin-top: 2.5rem;

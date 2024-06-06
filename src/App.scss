@@ -19,6 +19,7 @@
 body {
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
     color: $light;
     * {
         ul {
@@ -98,9 +99,6 @@ section {
             margin-right: 1.75rem;
         }
     }
-    .body {
-        display: grid;
-    }
     .content {
         .description {
             font-family: $ff-sans;
@@ -108,6 +106,9 @@ section {
             line-height: clamp(1.5625rem, 3.65vw, 2rem);
             color: $accent;
         }
+    }
+    img {
+        width: 100%;
     }
 }
 
@@ -129,6 +130,9 @@ section {
     }
     .crew-bg {
         background-image: $bgCrewImgMobile;
+    }
+    .tech-bg {
+        background-image: $bgTechnologyImgMobile;
     }
     header {
         margin-top: 1.5rem;
@@ -195,6 +199,9 @@ section {
     .crew-bg {
         background-image: $bgCrewImgTablet;
     }
+    .tech-bg {
+        background-image: $bgTechnologyImgTablet;
+    }
     header {
         margin-left: 3.82%;
         .primaryNav {
@@ -231,6 +238,9 @@ section {
     }
     .crew-bg {
         background-image: $bgCrewImgDesktop;
+    }
+    .tech-bg {
+        background-image: $bgTechnologyImgDesktop;
     }
     header {
         margin-top: 2.5rem;

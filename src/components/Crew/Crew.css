@@ -13,6 +13,8 @@ main {
 main .crew {
   display: grid;
   place-items: center;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
 }
 main .crew .content h3,
 main .crew .content h4 {
@@ -50,9 +52,6 @@ main .crewImg {
   max-height: 43.75rem;
   display: inline-grid;
 }
-main .crewImg img {
-  width: 100%;
-}
 
 /* --------------------------- */
 /*=== Mobile Design (320px) ===*/
@@ -67,7 +66,7 @@ main .crewImg img {
   main .crewImg {
     justify-items: center;
     order: 1;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #383b4b;
   }
   main .crewImg img {
     width: 61.5%;

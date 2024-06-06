@@ -5,6 +5,7 @@ main {
     .crew {
         display: grid;
         place-items: center;
+        column-gap: 5rem;
         .content {
             h3,
             h4 {
@@ -43,9 +44,6 @@ main {
     .crewImg {
         max-height: 43.75rem;
         display: inline-grid;
-        img {
-            width: 100%;
-        }
     }
 }
 
@@ -63,7 +61,7 @@ main {
         .crewImg {
             justify-items: center;
             order: 1;
-            border-bottom: 1px solid #fff;
+            border-bottom: 1px solid #383b4b;
             img {
                 width: 61.5%;
             }
