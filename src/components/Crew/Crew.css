@@ -57,18 +57,18 @@ main .crewImg {
 /*=== Mobile Design (320px) ===*/
 /* --------------------------- */
 @media only screen and (max-width: 47.99em) {
-  main h5 {
+  .crew-bg main h5 {
     margin-bottom: 3.75rem;
   }
-  main .content {
+  .crew-bg main .content {
     order: 2;
   }
-  main .crewImg {
+  .crew-bg main .crewImg {
     justify-items: center;
     order: 1;
     border-bottom: 1px solid #383b4b;
   }
-  main .crewImg img {
+  .crew-bg main .crewImg img {
     width: 61.5%;
   }
 }

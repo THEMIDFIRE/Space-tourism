@@ -51,19 +51,21 @@ main {
 /*=== Mobile Design (320px) ===*/
 /* --------------------------- */
 @media only screen and (max-width: 47.99em) {
-    main {
-        h5 {
-            margin-bottom: 3.75rem;
-        }
-        .content {
-            order: 2;
-        }
-        .crewImg {
-            justify-items: center;
-            order: 1;
-            border-bottom: 1px solid #383b4b;
-            img {
-                width: 61.5%;
+    .crew-bg {
+        main {
+            h5 {
+                margin-bottom: 3.75rem;
+            }
+            .content {
+                order: 2;
+            }
+            .crewImg {
+                justify-items: center;
+                order: 1;
+                border-bottom: 1px solid #383b4b;
+                img {
+                    width: 61.5%;
+                }
             }
         }
     }
