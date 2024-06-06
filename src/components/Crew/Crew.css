@@ -57,18 +57,18 @@ main .crewImg {
 /*=== Mobile Design (320px) ===*/
 /* --------------------------- */
 @media only screen and (max-width: 47.99em) {
-  .crew-bg main h5 {
+  [class*=-bg]:not(.home-bg) main h5 {
     margin-bottom: 3.75rem;
   }
-  .crew-bg main .content {
+  [class*=-bg]:not(.home-bg) main .content {
     order: 2;
   }
-  .crew-bg main .crewImg {
+  [class*=-bg]:not(.home-bg) main .crewImg {
     justify-items: center;
     order: 1;
     border-bottom: 1px solid #383b4b;
   }
-  .crew-bg main .crewImg img {
+  [class*=-bg]:not(.home-bg) main .crewImg img {
     width: 61.5%;
   }
 }
