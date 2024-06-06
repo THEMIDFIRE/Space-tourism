@@ -14,16 +14,14 @@ main {
             .crewRole {
                 font-size: clamp($fs-normal, 3.15vw, $fs-biggest);
                 opacity: 0.5;
-                margin-block: clamp(3.75rem, 7vw, 9.625rem) 0.9375rem;
             }
             .crewName {
                 font-size: clamp(1.5rem, 5.25vw, $fs-large);
-            }
-            .description {
-                margin-block: 1.6875rem 7.5rem;
+                margin-top: clamp(0.5rem, 1.04vw, 0.9375rem);
+                margin-bottom: clamp(1rem, 2vw, 1.6875rem);
             }
             nav {
-                padding-bottom: 5.875rem;
+                margin-block: clamp(2rem, 5.5vw, 7.5rem);
                 button {
                     width: 0.9375rem;
                     aspect-ratio: 1;
@@ -44,6 +42,7 @@ main {
     }
     .crewImg {
         max-height: 43.75rem;
+        display: inline-grid;
         img {
             width: 100%;
         }
@@ -54,12 +53,21 @@ main {
 /*=== Mobile Design (320px) ===*/
 /* --------------------------- */
 @media only screen and (max-width: 47.99em) {
-    .content {
-        order: 2;
-    }
-    .crewImg {
-        order: 1;
-        border-bottom: 1px solid #fff;
+    main {
+        h5 {
+            margin-bottom: 3.75rem;
+        }
+        .content {
+            order: 2;
+        }
+        .crewImg {
+            justify-items: center;
+            order: 1;
+            border-bottom: 1px solid #fff;
+            img {
+                width: 61.5%;
+            }
+        }
     }
 }
 
@@ -80,7 +88,13 @@ main {
         }
     }
 }
-
+@media only screen and (max-width: 63.99em) {
+    .crew {
+        h5 {
+            margin-bottom: 4rem;
+        }
+    }
+}
 /* ---------------------------- */
 /*=== Desktop Design (1024px) ===*/
 /* ---------------------------- */
@@ -101,7 +115,6 @@ main {
         .crewImg {
             grid-row: 2 / 3;
             grid-column: 2 / 3;
-            align-self: self-end;
         }
     }
 }

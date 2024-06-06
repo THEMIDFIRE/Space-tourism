@@ -22,16 +22,14 @@ main .crew .content h4 {
 main .crew .content .crewRole {
   font-size: clamp(1rem, 3.15vw, 2rem);
   opacity: 0.5;
-  margin-block: clamp(3.75rem, 7vw, 9.625rem) 0.9375rem;
 }
 main .crew .content .crewName {
   font-size: clamp(1.5rem, 5.25vw, 3.5rem);
-}
-main .crew .content .description {
-  margin-block: 1.6875rem 7.5rem;
+  margin-top: clamp(0.5rem, 1.04vw, 0.9375rem);
+  margin-bottom: clamp(1rem, 2vw, 1.6875rem);
 }
 main .crew .content nav {
-  padding-bottom: 5.875rem;
+  margin-block: clamp(2rem, 5.5vw, 7.5rem);
 }
 main .crew .content nav button {
   width: 0.9375rem;
@@ -50,6 +48,7 @@ main .crew .content nav button.active {
 }
 main .crewImg {
   max-height: 43.75rem;
+  display: inline-grid;
 }
 main .crewImg img {
   width: 100%;
@@ -59,12 +58,19 @@ main .crewImg img {
 /*=== Mobile Design (320px) ===*/
 /* --------------------------- */
 @media only screen and (max-width: 47.99em) {
-  .content {
+  main h5 {
+    margin-bottom: 3.75rem;
+  }
+  main .content {
     order: 2;
   }
-  .crewImg {
+  main .crewImg {
+    justify-items: center;
     order: 1;
     border-bottom: 1px solid #fff;
+  }
+  main .crewImg img {
+    width: 61.5%;
   }
 }
 /* --------------------------- */
@@ -79,6 +85,11 @@ main .crewImg img {
   }
   .crew .content nav {
     order: 4;
+  }
+}
+@media only screen and (max-width: 63.99em) {
+  .crew h5 {
+    margin-bottom: 4rem;
   }
 }
 /* ---------------------------- */
@@ -102,6 +113,5 @@ main .crewImg img {
   .crew .crewImg {
     grid-row: 2/3;
     grid-column: 2/3;
-    align-self: self-end;
   }
 }/*# sourceMappingURL=Crew.css.map */
