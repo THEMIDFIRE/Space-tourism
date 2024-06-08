@@ -77,6 +77,17 @@ section {
     &:not(.home) {
         max-width: 76.95%;
         margin-inline: auto;
+        display: grid;
+        place-items: center;
+    }
+    h1,
+    h3,
+    h4,
+    a {
+        text-transform: uppercase;
+    }
+    h3 {
+        font-size: clamp(1.5rem, 5.25vw, $fs-large);
     }
     h5,
     button {
@@ -87,10 +98,7 @@ section {
     h5 {
         font-size: clamp($fs-normal, 2.61vw, $fs-bigger);
     }
-    h1,
-    a {
-        text-transform: uppercase;
-    }
+
     h5 {
         letter-spacing: $ls-widest;
         span {
@@ -184,6 +192,23 @@ section {
             }
         }
     }
+    [class*="-bg"]:not(.home-bg) {
+        main {
+            h5 {
+                margin-bottom: 3.75rem;
+            }
+            .content {
+                order: 2;
+            }
+            [class*="Img"] {
+                justify-items: center;
+                order: 1;
+                img {
+                    width: 61.5%;
+                }
+            }
+        }
+    }
 }
 
 /* --------------------------- */
@@ -222,6 +247,12 @@ section {
                     }
                 }
             }
+        }
+    }
+    section:not(.home) {
+        .head,
+        h5 {
+            justify-self: start;
         }
     }
 }
@@ -271,12 +302,9 @@ section {
 
     section {
         text-align: left;
-        .body {
-            &:not(.crew) {
-                .body {
-                    place-items: center;
-                }
-            }
+        h5 {
+            grid-row: 1 / 2;
+            grid-column: 1 / 3;
         }
     }
 }

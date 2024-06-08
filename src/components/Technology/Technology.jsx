@@ -37,8 +37,9 @@ const Tech = () => {
                             ))}
                         </nav>
                         <div className="body">
-                            <h1>{selectedTech.name}</h1>
-                            <p>{selectedTech.description}</p>
+                            <p>the terminology …</p>
+                            <h3>{selectedTech.name}</h3>
+                            <p className="description">{selectedTech.description}</p>
                         </div>
                     </div>
 

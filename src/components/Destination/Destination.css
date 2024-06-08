@@ -7,10 +7,6 @@
 /*-----------------------*/
 /*   Background images   */
 /*-----------------------*/
-.destination-bg main {
-  margin-top: 4.75rem;
-}
-
 .destination .body {
   display: grid;
   -moz-column-gap: 9.8125rem;
