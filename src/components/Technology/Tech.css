@@ -13,4 +13,22 @@
 }
 .tech .content {
   display: flex;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+.tech .content .techNav button {
+  font-family: "Bellefair", serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  aspect-ratio: 1;
+  width: 5rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+}
+.tech .content .techNav button:not(.active) {
+  background: transparent;
+  color: #fff;
+}
+.tech img {
+  width: auto;
 }/*# sourceMappingURL=Tech.css.map */

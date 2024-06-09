@@ -4,5 +4,24 @@
     column-gap: 7.5rem;
     .content {
         display: flex;
+        column-gap: 5rem;
+        .techNav {
+            button {
+                font-family: $ff-serif;
+                font-size: $fs-biggest;
+                letter-spacing: 2px;
+                aspect-ratio: 1;
+                width: 5rem;
+                border: 1px solid rgba($color: $light, $alpha: 0.25);
+                border-radius: 50%;
+                &:not(.active) {
+                    background: transparent;
+                    color: $light;
+                }
+            }
+        }
+    }
+    img {
+        width: auto;
     }
 }
