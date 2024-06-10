@@ -74,10 +74,12 @@ section {
   text-align: center;
 }
 section:not(.home) {
-  max-width: 76.95%;
-  margin-inline: auto;
   display: grid;
   place-items: center;
+}
+section:not(.home):not(.tech) {
+  max-width: 76.95%;
+  margin-inline: auto;
 }
 section h1,
 section h3,

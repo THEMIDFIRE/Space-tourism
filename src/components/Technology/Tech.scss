@@ -1,11 +1,14 @@
 @import "../../variables";
 
 .tech {
-    column-gap: 7.5rem;
+    max-width: 90%;
+    column-gap: 8.125rem;
+    margin-inline: auto 0;
     .content {
         display: flex;
         column-gap: 5rem;
         .techNav {
+            display: flex;
             button {
                 font-family: $ff-serif;
                 font-size: $fs-biggest;
@@ -20,8 +23,44 @@
                 }
             }
         }
+        .body {
+            p:first-of-type {
+                font-family: $ff-sans-cond;
+                color: $accent;
+                text-transform: uppercase;
+                letter-spacing: $ls-wider;
+            }
+            h3 {
+                margin-block: 0.6875rem 1.0625rem;
+            }
+        }
     }
     img {
         width: auto;
+    }
+}
+
+@media only screen and (max-width: 63.99em) {
+    .tech {
+        margin-inline: auto;
+        .content {
+            order: 2;
+            flex-direction: column;
+        }
+    }
+}
+
+/* ---------------------------- */
+/*=== Desktop Design (1024px) ===*/
+/* ---------------------------- */
+@media only screen and (min-width: 64em) {
+    .tech {
+        row-gap: 1.625rem;
+        .content {
+            .techNav {
+                flex-direction: column;
+                row-gap: 2rem;
+            }
+        }
     }
 }

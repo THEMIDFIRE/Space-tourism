@@ -75,10 +75,12 @@ header {
 section {
     text-align: center;
     &:not(.home) {
-        max-width: 76.95%;
-        margin-inline: auto;
         display: grid;
         place-items: center;
+        &:not(.tech) {
+            max-width: 76.95%;
+            margin-inline: auto;
+        }
     }
     h1,
     h3,

@@ -5,7 +5,6 @@
         display: grid;
         column-gap: 9.8125rem;
         row-gap: clamp(1.625rem, 6.95vw, 3.3125rem);
-        margin-top: 4rem;
         .destinationImg {
             img {
                 width: clamp(10.625rem, 39.07vw, 27.8125rem);
@@ -89,11 +88,11 @@
 /* ---------------------------- */
 @media only screen and (min-width: 64em) {
     .destination {
+        row-gap: 4rem;
         .body {
             text-align: left;
             grid-template-columns: repeat(2, minmax(38%, 27.8125rem));
             justify-content: space-between;
-
             .destinationInfo {
                 justify-content: start;
                 column-gap: 4.9375rem;

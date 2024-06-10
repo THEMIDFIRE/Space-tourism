@@ -8,13 +8,18 @@
 /*   Background images   */
 /*-----------------------*/
 .tech {
-  -moz-column-gap: 7.5rem;
-       column-gap: 7.5rem;
+  max-width: 90%;
+  -moz-column-gap: 8.125rem;
+       column-gap: 8.125rem;
+  margin-inline: auto 0;
 }
 .tech .content {
   display: flex;
   -moz-column-gap: 5rem;
        column-gap: 5rem;
+}
+.tech .content .techNav {
+  display: flex;
 }
 .tech .content .techNav button {
   font-family: "Bellefair", serif;
@@ -29,6 +34,37 @@
   background: transparent;
   color: #fff;
 }
+.tech .content .body p:first-of-type {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #d0d6f9;
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+}
+.tech .content .body h3 {
+  margin-block: 0.6875rem 1.0625rem;
+}
 .tech img {
   width: auto;
+}
+
+@media only screen and (max-width: 63.99em) {
+  .tech {
+    margin-inline: auto;
+  }
+  .tech .content {
+    order: 2;
+    flex-direction: column;
+  }
+}
+/* ---------------------------- */
+/*=== Desktop Design (1024px) ===*/
+/* ---------------------------- */
+@media only screen and (min-width: 64em) {
+  .tech {
+    row-gap: 1.625rem;
+  }
+  .tech .content .techNav {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
 }/*# sourceMappingURL=Tech.css.map */

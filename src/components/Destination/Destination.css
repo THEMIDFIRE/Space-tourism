@@ -12,7 +12,6 @@
   -moz-column-gap: 9.8125rem;
        column-gap: 9.8125rem;
   row-gap: clamp(1.625rem, 6.95vw, 3.3125rem);
-  margin-top: 4rem;
 }
 .destination .body .destinationImg img {
   width: clamp(10.625rem, 39.07vw, 27.8125rem);
@@ -86,6 +85,9 @@
 /*=== Desktop Design (1024px) ===*/
 /* ---------------------------- */
 @media only screen and (min-width: 64em) {
+  .destination {
+    row-gap: 4rem;
+  }
   .destination .body {
     text-align: left;
     grid-template-columns: repeat(2, minmax(38%, 27.8125rem));
