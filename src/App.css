@@ -188,9 +188,6 @@ section img {
     border-bottom: none;
     border-right: 3px solid #fff;
   }
-  [class*=-bg]:not(.home-bg) main h5 {
-    margin-bottom: 3.75rem;
-  }
   [class*=-bg]:not(.home-bg) main .content {
     order: 2;
   }
@@ -236,6 +233,11 @@ section img {
   section:not(.home) .head,
   section:not(.home) h5 {
     justify-self: start;
+  }
+}
+@media only screen and (max-width: 63.99em) {
+  section:not(.home) h5 {
+    margin-bottom: clamp(2rem, 8vw, 3.75rem);
   }
 }
 /* ---------------------------- */
