@@ -199,7 +199,7 @@ section {
             .content {
                 order: 2;
             }
-            [class*="Img"] {
+            [class*="Img"]:not(.techImg) {
                 justify-items: center;
                 order: 1;
                 img {

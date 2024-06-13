@@ -191,11 +191,11 @@ section img {
   [class*=-bg]:not(.home-bg) main .content {
     order: 2;
   }
-  [class*=-bg]:not(.home-bg) main [class*=Img] {
+  [class*=-bg]:not(.home-bg) main [class*=Img]:not(.techImg) {
     justify-items: center;
     order: 1;
   }
-  [class*=-bg]:not(.home-bg) main [class*=Img] img {
+  [class*=-bg]:not(.home-bg) main [class*=Img]:not(.techImg) img {
     width: 61.5%;
   }
 }
