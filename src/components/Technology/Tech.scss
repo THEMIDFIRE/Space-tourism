@@ -70,13 +70,29 @@
 /*=== Desktop Design (1024px) ===*/
 /* ---------------------------- */
 @media only screen and (min-width: 64em) {
+    .tech-bg {
+        #root {
+            display: grid;
+            grid-template-rows: auto 1fr;
+            min-height: 100svh;
+        }
+    }
+
     .tech {
         row-gap: 1.625rem;
+        height: 100%;
+        h5 {
+            align-self: end;
+        }
         .content {
             .techNav {
                 flex-direction: column;
                 row-gap: 2rem;
             }
+        }
+        .techImg {
+            display: inline-grid;
+            align-self: end;
         }
     }
 }
