@@ -43,10 +43,19 @@
 .tech .content .body h3 {
   margin-block: 0.6875rem 1.0625rem;
 }
-.tech img {
-  width: auto;
+.tech .content .body .description {
+  max-width: 444px;
+  text-indent: 1px;
 }
 
+/* --------------------------- */
+/*=== Mobile Design (320px) ===*/
+/* --------------------------- */
+@media only screen and (max-width: 47.99em) {
+  .tech .content .body .description {
+    max-width: 327px;
+  }
+}
 @media only screen and (max-width: 63.99em) {
   .tech {
     max-width: 100%;
@@ -61,6 +70,9 @@
     margin-bottom: clamp(1.625rem, 6vw, 2.75rem);
     -moz-column-gap: 1rem;
          column-gap: 1rem;
+  }
+  .tech .content .body .description {
+    margin-inline: auto;
   }
   .tech .techImg {
     width: 100%;
@@ -86,7 +98,6 @@
   }
   .tech {
     row-gap: 1.625rem;
-    height: 100%;
   }
   .tech h5 {
     align-self: end;
@@ -96,7 +107,9 @@
     row-gap: 2rem;
   }
   .tech .techImg {
+    width: 100%;
     display: inline-grid;
     align-self: end;
+    justify-content: end;
   }
 }/*# sourceMappingURL=Tech.css.map */

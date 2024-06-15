@@ -117,9 +117,6 @@ section {
             color: $accent;
         }
     }
-    img {
-        width: 100%;
-    }
 }
 
 @supports (backdrop-filter: blur(15px)) {

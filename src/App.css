@@ -113,9 +113,6 @@ section .content .description {
   line-height: clamp(1.5625rem, 3.65vw, 2rem);
   color: #d0d6f9;
 }
-section img {
-  width: 100%;
-}
 
 @supports ((-webkit-backdrop-filter: blur(15px)) or (backdrop-filter: blur(15px))) {
   .primaryNav {
